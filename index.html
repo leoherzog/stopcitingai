@@ -7,7 +7,9 @@
     <title>Stop Citing AI</title>
     <meta name="description" content="A response to 'But ChatGPT says...'">
     <meta name="author" content="Leo Herzog | herzog.tech">
-
+    <meta property="og:title" content="Stop Citing AI">
+    <meta property="og:description" content="A response to 'But ChatGPT says...'">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
@@ -26,8 +28,10 @@
       h2:only-child {
         margin: 0;
       }
-      input[disabled] {
-        opacity: 1 !important;
+      fieldset[disabled],
+      fieldset[disabled] > * {
+        opacity: 1;
+        cursor: pointer;
       }
       .no {
         color: white;
@@ -71,41 +75,41 @@
         <p>
           What kinds of things might they be <mark>good</mark> at?
         </p>
-        <fieldset role="group">
-          <input value="What are some common patterns across these?" disabled />
-          <input type="submit" value="↑" />
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <input value="Help me brainstorm ideas about this?" readonly />
+          <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
-        <fieldset role="group">
-          <input value="What’s a good way to phrase this?" disabled />
-          <input type="submit" value="↑" />
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <input value="What are some common patterns across these?" readonly />
+          <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
-        <fieldset role="group">
-          <input value="Help me brainstorm ideas about this?" disabled />
-          <input type="submit" value="↑" />
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <input value="Summarize this for me" readonly />
+          <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
-        <fieldset role="group">
-          <input value="Summarize this for me" disabled />
-          <input type="submit" value="↑" />
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <input value="What’s a good way to phrase this?" readonly />
+          <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
         <hr>
         <p>
           What kinds of things might they be <mark class="no">bad</mark> at?
         </p>
-        <fieldset role="group">
-          <input value="Tell me what day this happened" disabled />
-          <input type="submit" value="↑" class="no" />
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <input value="Tell me what day this happened" readonly />
+          <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
-        <fieldset role="group">
-          <input value="What should I do next about that?" disabled />
-          <input type="submit" value="↑" class="no" />
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <input value="What should I do next about that?" readonly />
+          <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
-        <fieldset role="group">
-          <input value="Is this claim true?" disabled />
-          <input type="submit" value="↑" class="no" />
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <input value="Is this claim true?" readonly />
+          <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
-        <fieldset role="group">
-          <input value="What's the legal precedent for this?" disabled />
-          <input type="submit" value="↑" class="no" />
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <input value="What's the legal precedent for this?" readonly />
+          <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
         <hr>
         <p>

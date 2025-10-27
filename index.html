@@ -4,6 +4,10 @@
     <base target="_top">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stop Citing AI</title>
+    <meta name="description" content="A response to 'But ChatGPT says...'">
+    <meta name="author" content="Leo Herzog | herzog.tech">
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
@@ -31,8 +35,13 @@
         border-color: firebrick;
         cursor: not-allowed;
       }
-      ul > ul {
-        margin: 0;
+      .centered {
+        text-align: center;
+      }
+      .rotate {
+        display: inline-block;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(-45deg);
       }
       @media (min-width: 1280px) {
         article {
@@ -121,15 +130,36 @@
           <li><a href="https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows" target="_blank">The Guardian: ‘Sycophantic’ AI chatbots tell users what they want to hear, study shows</a></li>
         </ul>
       </article>
+      <article class="centered">
+        <h3>Send this to someone who's just said to you, “But ChatGPT Said...”</h3>
+        <button id="share"><span class="rotate">➤</span> Share</button>
+      </article>
     </main>
     <script>
       function toggleTheme() {
         document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
         document.getElementById('lightdarktoggle').innerText = document.documentElement.dataset.theme === 'dark' ? '☀️' : '🌙';
       }
+      async function share() {
+        if (navigator.share) {
+          try {
+            await navigator.share({
+              "title": 'Stop Citing AI',
+              "text": 'A response to "But ChatGPT says..."',
+              "url": window.location.href
+            });
+          } catch (err) {
+            console.log('Error sharing:', err);
+          }
+        } else {
+          navigator.clipboard.writeText(window.location.href);
+          alert('Link copied to clipboard!');
+        }
+      }
       document.addEventListener('DOMContentLoaded', function () {
         toggleTheme();
         document.getElementById('lightdarktoggle').addEventListener('click', toggleTheme);
+        document.getElementById('share').addEventListener('click', share);
       });
     </script>
   </body>

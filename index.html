@@ -112,13 +112,13 @@
       </article>
     </main>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        document.documentElement.dataset.theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      function toggleTheme() {
+        document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
         document.getElementById('lightdarktoggle').innerText = document.documentElement.dataset.theme === 'dark' ? '☀️' : '🌙';
-        document.getElementById('lightdarktoggle').addEventListener('click', (e) => {
-          document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-          e.srcElement.innerText = document.documentElement.dataset.theme === 'dark' ? '☀️' : '🌙';
-        });
+      }
+      document.addEventListener('DOMContentLoaded', function () {
+        toggleTheme();
+        document.getElementById('lightdarktoggle').addEventListener('click', toggleTheme);
       });
     </script>
   </body>

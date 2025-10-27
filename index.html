@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base target="_top">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <style>
+      article {
+        text-align: center;
+        margin: var(--pico-block-spacing-vertical) auto;
+      }
+      main:first-child article:first-child {
+        margin: 20vh auto;
+      }
+      h1 {
+        margin: 0;
+      }
+      input[disabled] {
+        opacity: 1 !important;
+      }
+      article fieldset:nth-child(even) {
+        /* rotate: 1deg; */
+      }
+      article fieldset:nth-child(odd) {
+        /* rotate: -1deg; */
+      }
+      .no {
+        background-color: firebrick;
+        border-color: firebrick;
+        cursor: not-allowed;
+      }
+      @media (min-width: 1280px) {
+        article {
+          max-width: 50vw;
+        }
+        fieldset {
+          /* max-width: 50%; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <article>
+        <h1>You’ve been sent here because you cited <mark>AI</mark> as a source to try and prove something.</h1>
+      </article>
+      <article>
+        <h2>Responses from Large Language Models like ChatGPT, Claude, or Gemini are not facts.</h2>
+        <p>
+        They're predicting what words are most likely to come next in a sequence.
+        </p>
+        <p>
+        They can produce convincing-sounding information, but that information may not be accurate or reliable.
+        </p>
+      </article>
+      <article>
+        <p>
+        Imagine someone who has read thousands of books, but <strong>doesn't remember where they read what</strong>.
+        </p>
+        <p>
+          What kinds of things might they be good at?
+        </p>
+        <fieldset role="group">
+          <input value="What are some common patterns across x?" disabled />
+          <input type="submit" value="↑" />
+        </fieldset>
+        <fieldset role="group">
+          <input value="What’s a good way to phrase x?" disabled />
+          <input type="submit" value="↑" />
+        </fieldset>
+        <fieldset role="group">
+          <input value="Help me brainstorm ideas for x" disabled />
+          <input type="submit" value="↑" />
+        </fieldset>
+        <fieldset role="group">
+          <input value="Summarize x for me" disabled />
+          <input type="submit" value="↑" />
+        </fieldset>
+        <p>
+          What kinds of things might they be bad at?
+        </p>
+        <fieldset role="group">
+          <input value="Tell me what day x happened" disabled />
+          <input type="submit" value="↑" class="no" />
+        </fieldset>
+        <fieldset role="group">
+          <input value="What should I do next about x?" disabled />
+          <input type="submit" value="↑" class="no" />
+        </fieldset>
+        <fieldset role="group">
+          <input value="Is x claim true?" disabled />
+          <input type="submit" value="↑" class="no" />
+        </fieldset>
+        <fieldset role="group">
+          <input value="What's the legal precedent for x?" disabled />
+          <input type="submit" value="↑" class="no" />
+        </fieldset>
+        <p>
+          Sure, they <em>might</em> get that answer right or give good advice...
+          but what “books” are they remembering when they give that answer?
+        </p>
+      </article>
+      <article>
+        <strong>The next time you find yourself copy-pasting something a chatbot said and sending that to someone, consider finding a real source instead.</strong>
+      </article>
+    </main>
+  </body>
+</html>

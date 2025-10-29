@@ -77,7 +77,7 @@
   <body>
     <figure id="lightdarktoggle" aria-label="Toggle between light and dark mode">☀️</figure>
     <main class="container">
-      <h1 class="centered intro">“But <span id="ai">ChatGPT</span> Said…”</h1>
+      <h1 class="centered intro">“But <span class="ai">ChatGPT</span> Said…”</h1>
       <article>
         <h1>You’ve been sent here because you cited <mark>AI</mark> as a source to try and prove something.</h1>
       </article>
@@ -162,7 +162,7 @@
       <article class="centered">
         <h3>Send this to someone who’s just said to you,
           <br />
-          “But ChatGPT Said...”</h3>
+          “But <span class="ai">ChatGPT</span> Said...”</h3>
         <button id="share"><span class="rotate">➤</span> Share</button>
       </article>
     </main>
@@ -193,16 +193,11 @@
         document.getElementById('share').addEventListener('click', share);
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('ai')) {
-          document.getElementById('ai').innerText = urlParams.get('ai');
+          Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = urlParams.get('ai'));
         } else {
           setInterval(function() {
             const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Apple Intelligence', 'Google AI Mode', 'Bing AI', 'Perplexity'];
-            const current = document.getElementById('ai').innerText;
-            let next = models[Math.floor(Math.random() * models.length)];
-            while (next === current) {
-              next = models[Math.floor(Math.random() * models.length)];
-            }
-            document.getElementById('ai').innerText = next;
+            Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = models[Math.floor(Math.random() * models.length)]);
           }, 3000);
         }
       });

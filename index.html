@@ -22,10 +22,12 @@
         font-size: 1rem;
         cursor: pointer;
       }
+      .centered {
+        text-align: center;
+      }
       .intro {
         font-family: 'Caveat Brush', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
         font-size: 2.5rem;
-        text-align: center;
         margin-top: 10vh;
         transform: rotate(-10deg);
         -webkit-transform: rotate(-10deg);
@@ -48,8 +50,10 @@
         border-color: firebrick;
         cursor: not-allowed;
       }
-      .centered {
-        text-align: center;
+      .rotate {
+        display: inline-block;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(-45deg);
       }
       @media (min-width: 1280px) {
         article {
@@ -61,7 +65,7 @@
   <body>
     <figure id="lightdarktoggle" aria-label="Toggle between light and dark mode">☀️</figure>
     <main class="container">
-      <h1 class="intro">“But <span id="ai">ChatGPT</span> Said…”</h1>
+      <h1 class="centered intro">“But <span id="ai">ChatGPT</span> Said…”</h1>
       <article>
         <h1>You’ve been sent here because you cited <mark>AI</mark> as a source to try and prove something.</h1>
       </article>
@@ -118,12 +122,13 @@
         </fieldset>
         <hr>
         <p>
-          Sure, they <em>might</em> get that answer right or give good advice...
-          but what “books” are they remembering when they give that answer?
+          Sure, you <em>might</em> get an answer that’s right or advice that's good…
+          but what “books” are it “remembering” when it gives that answer?
+          That answer or advice is a common combination of words, not a fact.
         </p>
       </article>
       <article>
-        <h2>Don’t copy-paste something that a chatbot said and send it to someone as if that is authoritative.</h2>
+        <h2>Don’t copy-paste something that a chatbot said and send it to someone as if that’s authoritative.</h2>
         <p>When you do that, you’re basically saying “here are a bunch of words that often go together in a sentence.”</p>
         <p>Sometimes that can be helpful or insightful. But it’s not a <strong>truth</strong>, and it’s certainly not the final say in a matter.</p>
       </article>
@@ -143,7 +148,9 @@
         </ul>
       </article>
       <article class="centered">
-        <h3>Send this to someone who’s just said to you, “But ChatGPT Said...”</h3>
+        <h3>Send this to someone who’s just said to you,
+          <br />
+          “But ChatGPT Said...”</h3>
         <button id="share"><span class="rotate">➤</span> Share</button>
       </article>
     </main>

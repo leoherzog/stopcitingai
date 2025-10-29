@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stop Citing AI</title>
-    <meta name="description" content="A response to 'But ChatGPT says...'">
+    <meta name="description" content="A response to ‘But ChatGPT says...’">
     <meta name="author" content="Leo Herzog | herzog.tech">
     <meta property="og:title" content="Stop Citing AI">
-    <meta property="og:description" content="A response to 'But ChatGPT says...'">
+    <meta property="og:description" content="A response to ‘But ChatGPT says...’">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
     <style>
       #lightdarktoggle {
         position: fixed;
@@ -20,6 +21,14 @@
         left: .5rem;
         font-size: 1rem;
         cursor: pointer;
+      }
+      .intro {
+        font-family: 'Caveat Brush', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 10vh;
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
       }
       article {
         margin: 20vh auto;
@@ -42,11 +51,6 @@
       .centered {
         text-align: center;
       }
-      .rotate {
-        display: inline-block;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(-45deg);
-      }
       @media (min-width: 1280px) {
         article {
           max-width: 50vw;
@@ -57,20 +61,21 @@
   <body>
     <figure id="lightdarktoggle" aria-label="Toggle between light and dark mode">☀️</figure>
     <main class="container">
+      <h1 class="intro">“But <span id="ai">ChatGPT</span> Said…”</h1>
       <article>
         <h1>You’ve been sent here because you cited <mark>AI</mark> as a source to try and prove something.</h1>
       </article>
       <article>
         <h2>Responses from Large Language Models like ChatGPT, Claude, or Gemini are not facts.</h2>
         <p>
-        They're predicting what words are most likely to come next in a sequence.
+        They’re predicting what words are most likely to come next in a sequence.
         </p>
         <p>
         They can produce convincing-sounding information, but that information may not be accurate or reliable.
         </p>
       </article>
       <article>
-        <h2>Imagine someone who has read thousands of books, but doesn't remember where they read what.</h2>
+        <h2>Imagine someone who has read thousands of books, but doesn’t remember where they read what.</h2>
         <hr>
         <p>
           What kinds of things might they be <mark>good</mark> at?
@@ -108,7 +113,7 @@
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
         <fieldset role="group" aria-label="Example prompt" disabled>
-          <input value="What's the legal precedent for this?" readonly />
+          <input value="What’s the legal precedent for this?" readonly />
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
         <hr>
@@ -118,7 +123,9 @@
         </p>
       </article>
       <article>
-        <h2>The next time you find yourself copy-pasting something a chatbot said and sending that to someone, consider finding a real source instead.</h2>
+        <h2>Don’t copy-paste something that a chatbot said and send it to someone as if that is authoritative.</h2>
+        <p>When you do that, you’re basically saying “here are a bunch of words that often go together in a sentence.”</p>
+        <p>Sometimes that can be helpful or insightful. But it’s not a <strong>truth</strong>, and it’s certainly not the final say in a matter.</p>
       </article>
       <article>
         <h3>Further reading:</h3>
@@ -136,7 +143,7 @@
         </ul>
       </article>
       <article class="centered">
-        <h3>Send this to someone who's just said to you, “But ChatGPT Said...”</h3>
+        <h3>Send this to someone who’s just said to you, “But ChatGPT Said...”</h3>
         <button id="share"><span class="rotate">➤</span> Share</button>
       </article>
     </main>
@@ -165,6 +172,15 @@
         toggleTheme();
         document.getElementById('lightdarktoggle').addEventListener('click', toggleTheme);
         document.getElementById('share').addEventListener('click', share);
+        setInterval(function() {
+          const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Apple Intelligence', 'Google AI Mode', 'Bing AI', 'Perplexity'];
+          const current = document.getElementById('ai').innerText;
+          let next = models[Math.floor(Math.random() * models.length)];
+          while (next === current) {
+            next = models[Math.floor(Math.random() * models.length)];
+          }
+          document.getElementById('ai').innerText = next;
+        }, 3000);
       });
     </script>
   </body>

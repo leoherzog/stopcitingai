@@ -191,15 +191,20 @@
         toggleTheme();
         document.getElementById('lightdarktoggle').addEventListener('click', toggleTheme);
         document.getElementById('share').addEventListener('click', share);
-        setInterval(function() {
-          const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Apple Intelligence', 'Google AI Mode', 'Bing AI', 'Perplexity'];
-          const current = document.getElementById('ai').innerText;
-          let next = models[Math.floor(Math.random() * models.length)];
-          while (next === current) {
-            next = models[Math.floor(Math.random() * models.length)];
-          }
-          document.getElementById('ai').innerText = next;
-        }, 3000);
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('ai')) {
+          document.getElementById('ai').innerText = urlParams.get('ai');
+        } else {
+          setInterval(function() {
+            const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Apple Intelligence', 'Google AI Mode', 'Bing AI', 'Perplexity'];
+            const current = document.getElementById('ai').innerText;
+            let next = models[Math.floor(Math.random() * models.length)];
+            while (next === current) {
+              next = models[Math.floor(Math.random() * models.length)];
+            }
+            document.getElementById('ai').innerText = next;
+          }, 3000);
+        }
       });
     </script>
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b9239565b6ce43daa9ae5f9f07714ed0"}'></script>

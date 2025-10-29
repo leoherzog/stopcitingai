@@ -196,7 +196,7 @@
           Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = urlParams.get('ai'));
         } else {
           setInterval(function() {
-            const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Apple Intelligence', 'Google AI Mode', 'Bing AI', 'Perplexity'];
+            const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Bing AI', 'Perplexity'];
             Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = models[Math.floor(Math.random() * models.length)]);
           }, 3000);
         }

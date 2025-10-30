@@ -40,7 +40,8 @@
       .intro {
         font-family: 'Caveat Brush', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
         font-size: 2.5rem;
-        margin-top: 10vh;
+        padding-top: 15vh;
+        height: 20vh;
         transform: rotate(-10deg);
         -webkit-transform: rotate(-10deg);
       }
@@ -196,7 +197,7 @@
           Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = urlParams.get('ai'));
         } else {
           setInterval(function() {
-            const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Bing AI', 'Perplexity'];
+            const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Apple Intelligence', 'Google AI Mode', 'Bing AI', 'Perplexity'];
             Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = models[Math.floor(Math.random() * models.length)]);
           }, 3000);
         }

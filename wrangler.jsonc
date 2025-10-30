@@ -3,5 +3,15 @@
   "compatibility_date": "2025-10-29",
   "assets": {
     "directory": "./"
+  },
+  "observability": {
+    "enabled": false,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true,
+      "invocation_logs": true
+    }
   }
 }

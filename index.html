@@ -80,7 +80,7 @@
     <main class="container">
       <h1 class="centered intro">“But <span class="ai">ChatGPT</span> Said…”</h1>
       <article>
-        <h1>You’ve been sent here because you cited <mark>AI</mark> as a source to try and prove something.</h1>
+        <h1>You’ve been sent here because you cited <mark>AI</mark> as a source to try to prove something.</h1>
       </article>
       <article>
         <h2>Responses from Large Language Models like ChatGPT, Claude, or Gemini are not facts.</h2>
@@ -166,6 +166,21 @@
           “But <span class="ai">ChatGPT</span> Said...”</h3>
         <button id="share"><span class="rotate">➤</span> Share</button>
       </article>
+      <section class="centered">
+        <p>
+          I like LLMs.
+          I like Machine Learning.
+          <br />
+          I just don't like watching start people turn their brains off.
+          <br />
+          <a href="https://herzog.tech" target="_blank" style="text-decoration: none;" aria-label="More about Leo Herzog">
+            ❤
+          </a>
+        </p>
+        <a href="https://github.com/leoherzog/stopcitingai" target="_blank" aria-label="Star on GitHub">
+          <button id="star" class="contrast">★ Star on GitHub</button>
+        </a>
+      </section>
     </main>
     <script>
       function toggleTheme() {
@@ -201,6 +216,20 @@
             Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = models[Math.floor(Math.random() * models.length)]);
           }, 3000);
         }
+        // fetch('https://api.github.com/repos/leoherzog/stopcitingai', {
+        //   headers: {
+        //     "Accept": "application/vnd.github+json"
+        //   }
+        // })
+        // .then(function(res) {
+        //   if (!res.ok) {
+        //     throw new Error("GitHub API error: HTTP " + res.status);
+        //   }
+        //   return res.json();
+        // })
+        // .then(function(data) {
+        //   document.getElementById('star').innerHTML = '★ ' + data.stargazers_count.toLocaleString() + ' Star on GitHub';
+        // });
       });
     </script>
   </body>

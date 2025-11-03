@@ -10,6 +10,9 @@ https://stopcitingai.com/?ai=Copilot
 
 Thanks to [Pico.css](https://picocss.com/) for the style, layout, responsiveness, and light/dark mode support.
 
+## Contributing
+
+Want to add or update a translation? See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow and style guidelines.
 
 ## License
 

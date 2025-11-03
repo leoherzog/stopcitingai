@@ -193,8 +193,9 @@
         </a>
       </section>
       <section>
-        <select id="language" aria-label="Select language">
+        <select id="language" aria-label="Seleccioná el idioma">
           <option value="en">English</option>
+          <option value="es-AR">Español (Argentina)</option>
         </select>
       </section>
     </main>
@@ -203,6 +204,7 @@
         document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
         document.getElementById('lightdarktoggle').innerText = document.documentElement.dataset.theme === 'dark' ? '☀️' : '🌙';
       }
+      
       async function share() {
         if (navigator.share) {
           try {
@@ -284,6 +286,7 @@
           }
         }
       }
+
       document.addEventListener('DOMContentLoaded', function () {
         toggleTheme();
         document.getElementById('lightdarktoggle').addEventListener('click', toggleTheme);

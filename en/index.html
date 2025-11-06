@@ -196,6 +196,7 @@
         <select id="language" aria-label="Seleccioná el idioma">
           <option value="en">English</option>
           <option value="es-AR">Español (Argentina)</option>
+          <option value="zh-cn">简体中文</option>
         </select>
       </section>
     </main>
@@ -204,7 +205,7 @@
         document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
         document.getElementById('lightdarktoggle').innerText = document.documentElement.dataset.theme === 'dark' ? '☀️' : '🌙';
       }
-      
+
       async function share() {
         if (navigator.share) {
           try {

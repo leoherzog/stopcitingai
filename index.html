@@ -59,6 +59,7 @@
       }
       fieldset[disabled],
       fieldset[disabled] > * {
+        height: auto;
         opacity: 1;
         cursor: default;
       }
@@ -109,19 +110,19 @@
           What kinds of things might they be <mark>good</mark> at?
         </p>
         <fieldset role="group" aria-label="Example prompt" disabled>
-          <input value="Help me brainstorm ideas about this?" aria-label="Example 1: Help me brainstorm ideas about this?" readonly />
+          <textarea aria-label="Example 1: Help me brainstorm ideas about this?" cols="2" readonly>Help me brainstorm ideas about this?</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
         <fieldset role="group" aria-label="Example prompt" disabled>
-          <input value="What are some common patterns across these?" aria-label="Example 2: What are some common patterns across these?" readonly />
+          <textarea aria-label="Example 2: What are some common patterns across these?" readonly>What are some common patterns across these?</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
         <fieldset role="group" aria-label="Example prompt" disabled>
-          <input value="Summarize this for me" aria-label="Example 3: Summarize this for me" readonly />
+          <textarea aria-label="Example 3: Summarize this for me" readonly>Summarize this for me</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
         <fieldset role="group" aria-label="Example prompt" disabled>
-          <input value="What’s a good way to phrase this?" aria-label="Example 4: What’s a good way to phrase this?" readonly />
+          <textarea aria-label="Example 4: What’s a good way to phrase this?" readonly>What’s a good way to phrase this?</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
         <hr>
@@ -129,19 +130,19 @@
           What kinds of things might they be <mark class="no">bad</mark> at?
         </p>
         <fieldset role="group" aria-label="Example prompt" disabled>
-          <input value="Tell me what day this happened" aria-label="Example 1: Tell me what day this happened" readonly />
+          <textarea aria-label="Example 1: Tell me what day this happened" readonly>Tell me what day this happened</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
         <fieldset role="group" aria-label="Example prompt" disabled>
-          <input value="What should I do next about that?" aria-label="Example 2: What should I do next about that?" readonly />
+          <textarea aria-label="Example 2: What should I do next about that?" readonly>What should I do next about that?</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
         <fieldset role="group" aria-label="Example prompt" disabled>
-          <input value="Is this claim true?" aria-label="Example 3: Is this claim true?" readonly />
+          <textarea aria-label="Example 3: Is this claim true?" readonly>Is this claim true?</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
         <fieldset role="group" aria-label="Example prompt" disabled>
-          <input value="What’s the legal precedent for this?" aria-label="Example 4: What’s the legal precedent for this?" readonly />
+          <textarea aria-label="Example 4: What’s the legal precedent for this?" readonly>What’s the legal precedent for this?</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
         <hr>

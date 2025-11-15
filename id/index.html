@@ -89,7 +89,7 @@
     </style>
   </head>
   <body>
-    <figure id="lightdarktoggle" aria-label="Toggle between light and dark mode">☀️</figure>
+    <figure id="lightdarktoggle" aria-label="Ubah mode terang dan gelap">☀️</figure>
     <main class="container">
       <h1 class="centered intro">“Tapi <span class="ai">ChatGPT</span> Bilang…”</h1>
       <article>
@@ -110,40 +110,40 @@
         <p>
           Orang kayak begitu <mark>jago</mark> kalau ditanyai soal apa?
         </p>
-        <fieldset role="group" aria-label="Example prompt" disabled>
-          <textarea aria-label="Example 1: Bisa bantu aku cari ide untuk hal ini?" cols="2" readonly>Bisa bantu aku cari ide untuk hal ini?</textarea>
+        <fieldset role="group" aria-label="Contoh prompt" disabled>
+          <textarea aria-label="Contoh 1: Bisa bantu aku cari ide untuk hal ini?" cols="2" readonly>Bisa bantu aku cari ide untuk hal ini?</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
-        <fieldset role="group" aria-label="Example prompt" disabled>
-          <textarea aria-label="Example 2: Apa pola yang sama dari beberapa hal ini?" readonly>Apa pola yang sama dari beberapa hal ini?</textarea>
+        <fieldset role="group" aria-label="Contoh prompt" disabled>
+          <textarea aria-label="Contoh 2: Apa pola yang sama dari beberapa hal ini?" readonly>Apa pola yang sama dari beberapa hal ini?</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
-        <fieldset role="group" aria-label="Example prompt" disabled>
-          <textarea aria-label="Example 3: Bantu aku meringkas tulisan ini" readonly>Bantu aku meringkas tulisan ini</textarea>
+        <fieldset role="group" aria-label="Contoh prompt" disabled>
+          <textarea aria-label="Contoh 3: Bantu aku meringkas tulisan ini" readonly>Bantu aku meringkas tulisan ini</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
-        <fieldset role="group" aria-label="Example prompt" disabled>
-          <textarea aria-label="Example 4: Bagaimana cara terbaik untuk mengatakan ini?" readonly>Bagaimana cara terbaik untuk mengatakan ini?</textarea>
+        <fieldset role="group" aria-label="Contoh prompt" disabled>
+          <textarea aria-label="Contoh 4: Bagaimana cara terbaik untuk mengatakan ini?" readonly>Bagaimana cara terbaik untuk mengatakan ini?</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
         <hr>
         <p>
           Orang kayak begitu <mark class="no">jangan</mark> dimintai pendapat soal apa? (hal-hal faktual ataupun opini)
         </p>
-        <fieldset role="group" aria-label="Example prompt" disabled>
-          <textarea aria-label="Example 1: Kapan hal ini terjadi?" readonly>Kapan hal ini terjadi?</textarea>
+        <fieldset role="group" aria-label="Contoh prompt" disabled>
+          <textarea aria-label="Contoh 1: Kapan hal ini terjadi?" readonly>Kapan hal ini terjadi?</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
-        <fieldset role="group" aria-label="Example prompt" disabled>
-          <textarea aria-label="Example 2: Lalu aku harus gimana?" readonly>Lalu aku harus gimana?</textarea>
+        <fieldset role="group" aria-label="Contoh prompt" disabled>
+          <textarea aria-label="Contoh 2: Lalu aku harus gimana?" readonly>Lalu aku harus gimana?</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
-        <fieldset role="group" aria-label="Example prompt" disabled>
-          <textarea aria-label="Example 3: Apakah ini benar?" readonly>Apakah ini benar?</textarea>
+        <fieldset role="group" aria-label="Contoh prompt" disabled>
+          <textarea aria-label="Contoh 3: Apakah ini benar?" readonly>Apakah ini benar?</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
-        <fieldset role="group" aria-label="Example prompt" disabled>
-          <textarea aria-label="Example 4: Apakah ada contoh kasus pengadilan untuk masalah seperti ini?" readonly>Apakah ada contoh kasus pengadilan untuk masalah seperti ini?</textarea>
+        <fieldset role="group" aria-label="Contoh prompt" disabled>
+          <textarea aria-label="Contoh 4: Apakah ada contoh kasus pengadilan untuk masalah seperti ini?" readonly>Apakah ada contoh kasus pengadilan untuk masalah seperti ini?</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
         <hr>
@@ -191,7 +191,7 @@
             ❤
           </a>
         </p>
-        <a href="https://github.com/leoherzog/stopcitingai" target="_blank" aria-label="Star on GitHub">
+        <a href="https://github.com/leoherzog/stopcitingai" target="_blank" aria-label="Bintang di GitHub">
           <button id="star" class="contrast">★ Bintang di GitHub</button>
         </a>
       </section>
@@ -223,7 +223,7 @@
           }
         } else {
           navigator.clipboard.writeText(window.location.href);
-          alert('Link copied to clipboard!');
+          alert('Pranala telah disalin ke clipboard! Tinggal tempelkan (Ctrl-V / Paste) ke WA orang itu!');
         }
       }
 
@@ -239,7 +239,7 @@
           const referrerUrl = new URL(document.referrer);
           return referrerUrl.origin !== window.location.origin;
         } catch (err) {
-          console.error('Unable to parse referrer URL: ' + err);
+          console.error('Galat ketika parse URL: ' + err);
           return true;
         }
       }

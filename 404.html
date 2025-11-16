@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base target="_top" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 - Page Not Found | Stop Citing AI</title>
+    <meta
+      name="description"
+      content="This page doesn't exist (and we didn't ask an AI to hallucinate one)"
+    />
+    <meta name="author" content="Leo Herzog | herzog.tech" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+    />
+    <style>
+      #lightdarktoggle {
+        position: fixed;
+        top: 0.5rem;
+        left: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .centered {
+        text-align: center;
+      }
+      .intro {
+        font-family: "Caveat Brush", "Segoe Print", "Bradley Hand", Chilanka,
+          TSCu_Comic, casual, cursive;
+        font-size: 2.5rem;
+        width: fit-content;
+        margin: 0 auto;
+        padding-top: 15vh;
+        padding-right: 5%;
+        height: 20vh;
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+      }
+      article {
+        margin: 20vh auto;
+      }
+      section {
+        margin: 10vh auto;
+      }
+      h1:only-child,
+      h2:only-child {
+        margin: 0;
+      }
+      .no {
+        color: white;
+        background-color: firebrick;
+        border-color: firebrick;
+      }
+      @media (min-width: 1280px) {
+        article {
+          max-width: 50vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <figure
+      id="lightdarktoggle"
+      aria-label="Toggle between light and dark mode"
+    >
+      ☀️
+    </figure>
+    <main class="container">
+      <h1 class="centered intro">404: Not Found</h1>
+      <article>
+        <h1>This page doesn't exist.</h1>
+      </article>
+      <article>
+        <h2>
+          Unlike an AI chatbot, we're not going to make something up just to
+          give you an answer.
+        </h2>
+        <p>
+          We could have asked ChatGPT to hallucinate a page for you, but that
+          wouldn't be very helpful.
+        </p>
+        <p>
+          Instead, we're being honest:
+          <mark>the page you're looking for isn't here</mark>.
+        </p>
+      </article>
+      <article>
+        <h2>What you can do:</h2>
+        <ul>
+          <li>Check the URL for typos</li>
+          <li>Go back to the <a href="/">home page</a></li>
+          <li>
+            Remember that just because something <em>sounds</em> like it should
+            exist doesn't mean it does
+          </li>
+        </ul>
+      </article>
+      <article class="centered">
+        <p>
+          (See what we did there? We gave you accurate information instead of a
+          convincing-sounding lie.)
+        </p>
+        <a href="/">
+          <button>← Back to Stop Citing AI</button>
+        </a>
+      </article>
+      <section class="centered">
+        <p>
+          I like LLMs. I like Machine Learning.
+          <br />
+          I just don't like watching smart people turn their brains off.
+          <br />
+          <a
+            href="https://herzog.tech"
+            target="_blank"
+            style="text-decoration: none"
+            aria-label="More about Leo Herzog"
+          >
+            ❤
+          </a>
+        </p>
+      </section>
+    </main>
+    <script>
+      function toggleTheme() {
+        document.documentElement.dataset.theme =
+          document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.getElementById("lightdarktoggle").innerText =
+          document.documentElement.dataset.theme === "dark" ? "☀️" : "🌙";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        toggleTheme();
+        document
+          .getElementById("lightdarktoggle")
+          .addEventListener("click", toggleTheme);
+      });
+    </script>
+  </body>
+</html>

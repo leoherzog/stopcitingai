@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base target="_top" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arrêtez de citer l'IA</title>
+    <meta name="description" content="Une réponse à «Mais ChatGPT a dit que…»" />
+    <meta name="author" content="Leo Herzog | herzog.tech" />
+    <meta property="og:title" content="Arrêtez de citer l'IA" />
+    <meta property="og:description" content="Une réponse à «Mais ChatGPT a dit que…»" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stopcitingai.com" />
+    <meta property="og:image" content="https://stopcitingai.com/social.png" />
+    <meta property="og:image:alt" content="A robot and speech bubble with a 'ban' circle-slash over it and the text 'But ChatGPT said'" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="3000" />
+    <meta property="og:image:height" content="1500" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arrêtez de citer l'IA" />
+    <meta name="twitter:description" content="Une réponse à «Mais ChatGPT a dit que…»" />
+    <meta name="twitter:image" content="https://stopcitingai.com/social.png" />
+    <meta name="twitter:image:alt" content="A robot and speech bubble with a 'ban' circle-slash over it and the text 'But ChatGPT said…'" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" />
+    <style>
+      #lightdarktoggle {
+        position: fixed;
+        top: .5rem;
+        left: .5rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .centered {
+        text-align: center;
+      }
+      .intro {
+        font-family: 'Caveat Brush', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+        font-size: 2.5rem;
+        width: fit-content;
+        margin: 0 auto;
+        padding-top: 15vh;
+        padding-right: 5%; /* visually centered since it's rotated */
+        height: 20vh;
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+      }
+      article {
+        margin: 20vh auto;
+      }
+      section {
+        margin: 10vh auto;
+      }
+      h1:only-child,
+      h2:only-child {
+        margin: 0;
+      }
+      fieldset[disabled],
+      fieldset[disabled] > * {
+        height: auto;
+        opacity: 1;
+        cursor: default;
+      }
+      .no {
+        color: white;
+        background-color: firebrick;
+        border-color: firebrick;
+        cursor: not-allowed;
+      }
+      .rotate {
+        display: inline-block;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      @media (min-width: 768px) {
+        #language {
+          width: fit-content;
+          float: right;
+        }
+      }
+      @media (min-width: 1280px) {
+        article {
+          max-width: 50vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <figure id="lightdarktoggle" aria-label="Changer entre les modes sombre et clair">☀️</figure>
+    <main class="container">
+      <h1 class="centered intro">“Mais <span class="ai">ChatGPT</span> a dit que…”</h1>
+      <article>
+        <h1>Vous avez été envoyé ici parce que vous avez cité <mark>AI</mark> comme une source prouvant quelque chose.</h1>
+      </article>
+      <article>
+        <h2>Les réponses des grand modèle de languages comme ChatGPT, Claude, ou Gemini ne sont pas des faits.</h2>
+        <p>
+        Ils prédisent quels mots arrivent le plus probablement à suite d'un texte.
+        </p>
+        <p>
+        Ils peuvent produire des informations convainquante, mais ça ne veut pas dire que c'est vrai ou fiable.
+        </p>
+      </article>
+      <article>
+        <h2>Imaginez une personne qui a lu des milliers de livre, mais qui ne se souvient pas de où il a lu chaque information qu'il en a retirée.</h2>
+        <hr>
+        <p>
+          Dans quelle activité serait-elle <mark>compétente</mark> ?
+        </p>
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <textarea aria-label="Exemple 1 : Aide moi à réfléchir là-dessus" cols="2" readonly>Aide moi à réfléchir là-dessus</textarea>
+          <input type="submit" value="↑" aria-hidden="true" disabled />
+        </fieldset>
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <textarea aria-label="Exemple 2 : Ya-t-il des répétitions entre ces sources ?" readonly>Ya-t-il des répétitions entre ces sources ?</textarea>
+          <input type="submit" value="↑" aria-hidden="true" disabled />
+        </fieldset>
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <textarea aria-label="Exemple 3 : Résume moi ceci" readonly>Résume moi ceci</textarea>
+          <input type="submit" value="↑" aria-hidden="true" disabled />
+        </fieldset>
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <textarea aria-label="Exemple 4 : Comment pourrais-je bien formuler ceci ?" readonly>Comment pourrais-je bien formuler ceci ?</textarea>
+          <input type="submit" value="↑" aria-hidden="true" disabled />
+        </fieldset>
+        <hr>
+        <p>
+          Dans quelle activité serait-elle <mark>mauvaise</mark> ?
+        </p>
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <textarea aria-label="Exemple 1 : Dit moi quel jour c'est arrivé" readonly>Dit moi quel jour c'est arrivé</textarea>
+          <input type="submit" value="↑" class="no" aria-hidden="true" />
+        </fieldset>
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <textarea aria-label="Exemple 2 : Que dois-je faire maintenant ?" readonly>Que dois-je faire maintenant ?</textarea>
+          <input type="submit" value="↑" class="no" aria-hidden="true" />
+        </fieldset>
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <textarea aria-label="Exemple 3 : Est-ce que c'est vrai ?" readonly>Est-ce que c'est vrai ?</textarea>
+          <input type="submit" value="↑" class="no" aria-hidden="true" />
+        </fieldset>
+        <fieldset role="group" aria-label="Example prompt" disabled>
+          <textarea aria-label="Exemple 4 : Quel est le précédent juridique sur ce sujet ?" readonly>Quel est le précédent juridique sur ce sujet ?</textarea>
+          <input type="submit" value="↑" class="no" aria-hidden="true" />
+        </fieldset>
+        <hr>
+        <p>
+          C'est sûr, pour <em>pourriez</em> obtenir une bonne réponse ou un bon conseil…
+          mais de quel «livre» se souvient-il quand elle donne cette réponse ?
+          Cette réponse ou ce conseil est une combinaison de mots, pas un fait.
+        </p>
+      </article>
+      <article>
+        <h2>Don’t copy-paste something that a chatbot said and send it to someone as if that’s authoritative.</h2>
+        <p>When you do that, you’re basically saying “here are a bunch of words that often go together in a sentence.”</p>
+        <p>Sometimes that can be helpful or insightful. But it’s not a <strong>truth</strong>, and it’s certainly not the final say in a matter.</p>
+        <h2>N'envoyez pas quelque chose qu'un chatbot a dit à quelqu'un comme si c'était une source faisant autorité.</h2>
+        <p>Quand vous faites ça, vous dites juste «voici quelques mots qui vont souvent ensemble dans une phrase»</p>
+        <p>Parfois ça peut aider ou éclairer. Mais ce n'est pas la <strong>vérité</strong>, et certainement pas le dernier mot à prononcer sur le sujet.</p>
+      </article>
+      <article>
+        <h3>Lectures supplémentaires:</h3>
+        <ul>
+          <li><a href="https://openai.com/index/why-language-models-hallucinate/" target="_blank">OpenAI: Why language models hallucinate</a></li>
+          <li><a href="https://www.ox.ac.uk/news/2023-11-20-large-language-models-pose-risk-science-false-answers-says-oxford-study" target="_blank">Oxford University: Large Language Models pose risk to science with false answers, says Oxford study</a></li>
+          <li><a href="https://www.nytimes.com/2025/05/05/technology/ai-hallucinations-chatgpt-google.html" target="_blank">New York Times: A.I. Is Getting More Powerful, but Its Hallucinations Are Getting Worse</a> (<a href="https://archive.is/CD7Ge" target="_blank">Archived Version</a>)</li>
+          <li><a href="https://www.media.mit.edu/publications/NEJM-AI-people-overtrust-ai-generated-medical-advice-despite-low-accuracy/" target="_blank">MIT Media Lab: People Overtrust AI-Generated Medical Advice despite Low Accuracy</a></li>
+          <li><a href="https://www.businessinsider.com/why-ai-chatbots-hallucinate-openai-chatgpt-anthropic-claude-2025-9" target="_blank">Business Insider: Why AI chatbots hallucinate, according to OpenAI researchers</a></li>
+          <li><a href="https://www.reuters.com/technology/artificial-intelligence/ai-hallucinations-court-papers-spell-trouble-lawyers-2025-02-18/" target="_blank">Reuters: AI 'hallucinations' in court papers spell trouble for lawyers</a></li>
+          <li><a href="https://www.nature.com/articles/d41586-025-03390-0" target="_blank">Nature: AI chatbots are sycophants — researchers say it’s harming science</a></li>
+          <li><a href="https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit" target="_blank">CNN: Parents of 16-year-old sue OpenAI, claiming ChatGPT advised on his suicide</a></li>
+          <li><a href="https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb" target="_blank">Financial Times: The ‘hallucinations’ that haunt AI: why chatbots struggle to tell the truth</a> (<a href="https://archive.is/P1Wpc" target="_blank">Archived Version</a>)</li>
+          <li><a href="https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows" target="_blank">The Guardian: ‘Sycophantic’ AI chatbots tell users what they want to hear, study shows</a></li>
+          <li><a href="https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database" target="_blank">PCMag: Vibe Coding Fiasco: AI Agent Goes Rogue, Deletes Company’s Entire Database</a></li>
+          <li><a href="https://theconversation.com/quand-lia-fait-nimporte-quoi-le-cas-du-gratte-ciel-et-du-trombone-a-coulisse-268033" target="_blank">The Conversation: Quand l’IA fait n’importe quoi, le cas du gratte-ciel et du trombone à coulisse </a></li>
+        </ul>
+      </article>
+      <article class="centered">
+        <h3>Envoyez ceci à quelqu'un qui vous a dit,,
+          <br />
+          “Mais <span class="ai">ChatGPT</span> a dit que...”</h3>
+        <button id="share"><span class="rotate">➤</span> Partager</button>
+      </article>
+      <section class="centered">
+        <p>
+          J'aime les LLM.
+          J'aime le Machine Learning.
+          <br />
+          Je n'aime juste pas voir des gens intelligent éteindre leur cerveau.
+          <br />
+          <a href="https://herzog.tech" target="_blank" style="text-decoration: none;" aria-label="À propos de Leo Herzog">
+            ❤
+          </a>
+        </p>
+        <a href="https://github.com/leoherzog/stopcitingai" target="_blank" aria-label="Star on GitHub">
+          <button id="star" class="contrast">★ Star sur GitHub</button>
+        </a>
+      </section>
+      <section>
+        <select id="language" aria-label="Seleccioná el idioma">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="es-AR">Español (Argentina)</option>
+          <option value="fr-FR">Français</option>
+        </select>
+      </section>
+    </main>
+    <script>
+      function toggleTheme() {
+        document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.getElementById('lightdarktoggle').innerText = document.documentElement.dataset.theme === 'dark' ? '☀️' : '🌙';
+      }
+
+      async function share() {
+        if (navigator.share) {
+          try {
+            await navigator.share({
+              "title": "Arrêtez de citer l'IA",
+              "text": 'Une réponse à «Mais ChatGPT a dit que…»',
+              "url": window.location.href
+            });
+          } catch (err) {
+            console.error('Error sharing: ' + err);
+          }
+        } else {
+          navigator.clipboard.writeText(window.location.href);
+          alert('Lien copié dans le presse-papier !');
+        }
+      }
+
+      function redirectToLanguage(lang) {
+        window.location.assign(window.location.protocol + '//' + window.location.host + '/' + lang + '/');
+      }
+
+      function isDirectNavigation() {
+        if (!document.referrer) {
+          return true;
+        }
+        try {
+          const referrerUrl = new URL(document.referrer);
+          return referrerUrl.origin !== window.location.origin;
+        } catch (err) {
+          console.error('Unable to parse referrer URL: ' + err);
+          return true;
+        }
+      }
+
+      function findBestMatch(tag, available) {
+        const normalized = (tag || '').toLowerCase();
+        if (!normalized) return null;
+        if (available.includes(normalized)) return normalized;
+        const base = normalized.split('-')[0];
+        return available.includes(base) ? base : null;
+      }
+
+      function checkLanguageState() {
+        const thisPageLang = document.documentElement.lang;
+        const normalizedThisLang = (thisPageLang || '').toLowerCase();
+        const languageSelect = document.getElementById('language');
+        const availableLangs = Array.from(languageSelect.options).map(option => option.value);
+        languageSelect.value = findBestMatch(thisPageLang, availableLangs) || availableLangs[0];
+
+        const pickerNavigationLang = sessionStorage.getItem('languageRedirectFromPicker');
+        if (pickerNavigationLang) {
+          sessionStorage.removeItem('languageRedirectFromPicker');
+          if (pickerNavigationLang !== normalizedThisLang && availableLangs.includes(pickerNavigationLang)) {
+            redirectToLanguage(pickerNavigationLang);
+          }
+          return;
+        }
+
+        const pathSegments = window.location.pathname.split('/').filter(Boolean);
+        const hasExplicitLanguageSegment = pathSegments.length > 0 && availableLangs.includes(pathSegments[0]);
+        const preferenceLang = localStorage.getItem('preferredLanguage');
+        const directNavigation = isDirectNavigation();
+        if (directNavigation && !hasExplicitLanguageSegment && preferenceLang) {
+          const matchedPref = findBestMatch(preferenceLang, availableLangs);
+          if (matchedPref && matchedPref !== normalizedThisLang) {
+            redirectToLanguage(matchedPref);
+            return;
+          }
+        }
+
+        if (directNavigation) {
+          const browserLangs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || navigator.userLanguage];
+          for (const lang of browserLangs) {
+            const matched = findBestMatch(lang, availableLangs);
+            if (matched && matched !== normalizedThisLang) {
+              redirectToLanguage(matched);
+              return;
+            }
+          }
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        toggleTheme();
+        document.getElementById('lightdarktoggle').addEventListener('click', toggleTheme);
+        document.getElementById('share').addEventListener('click', share);
+        checkLanguageState();
+        document.getElementById('language').addEventListener('change', function() {
+          const selectedLang = this.value;
+          localStorage.setItem('preferredLanguage', selectedLang);
+          sessionStorage.setItem('languageRedirectFromPicker', selectedLang);
+          redirectToLanguage(selectedLang);
+        });
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('ai')) {
+          Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = urlParams.get('ai'));
+        } else {
+          setInterval(function() {
+            const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Apple Intelligence', 'Google AI Mode', 'Bing AI', 'Perplexity'];
+            Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = models[Math.floor(Math.random() * models.length)]);
+          }, 3000);
+        }
+        fetch('https://api.github.com/repos/leoherzog/stopcitingai', {
+          "headers": {
+            "Accept": "application/vnd.github+json"
+          }
+        })
+        .then(function(res) {
+          if (!res.ok) throw new Error('GitHub API error: HTTP ' + res.status);
+          return res.json();
+        })
+        .then(function(data) {
+          document.getElementById('star').textContent = '★ ' + data.stargazers_count.toLocaleString() + ' Stars on GitHub';
+        });
+      });
+    </script>
+  </body>
+</html>

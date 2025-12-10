@@ -1,0 +1,7 @@
+{
+  // Disable formatting for html files
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.formatOnSaveMode": "file",
+}

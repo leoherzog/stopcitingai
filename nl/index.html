@@ -11,7 +11,7 @@
     <meta property="og:description" content="Een antwoord op ‘Maar ChatGPT zei dat…’" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://stopcitingai.com" />
-    <meta property="og:image" content="https://stopcitingai.com/nl/social.png" />
+    <meta property="og:image" content="https://stopcitingai.com/social.png" />
     <meta property="og:image:alt" content="Een robot en tekstballon met een ‘verboden’ cirkel er omheen en de tekst ‘Maar ChatGPT zei dat…’" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="3000" />
@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Stop met het citeren van AI" />
     <meta name="twitter:description" content="Een antwoord op ‘Maar ChatGPT zei dat…’" />
-    <meta name="twitter:image" content="https://stopcitingai.com/nl/social.png" />
+    <meta name="twitter:image" content="https://stopcitingai.com/social.png" />
     <meta name="twitter:image:alt" content="Een robot en tekstballon met een ‘verboden’ cirkel er omheen en de tekst ‘Maar ChatGPT zei dat…’" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -171,6 +171,7 @@
           <li><a href="https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit" target="_blank">CNN: Parents of 16-year-old sue OpenAI, claiming ChatGPT advised on his suicide</a></li>
           <li><a href="https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb" target="_blank">Financial Times: The ‘hallucinations’ that haunt AI: why chatbots struggle to tell the truth</a> (<a href="https://archive.is/P1Wpc" target="_blank">Archived Version</a>)</li>
           <li><a href="https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows" target="_blank">The Guardian: ‘Sycophantic’ AI chatbots tell users what they want to hear, study shows</a></li>
+          <li><a href="https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database" target="_blank">PCMag: Vibe Coding Fiasco: AI Agent Goes Rogue, Deletes Company's Entire Database</a></li>
         </ul>
       </article>
       <article class="centered">
@@ -199,6 +200,7 @@
           <option value="en">English</option>
           <option value="es">Español</option>
           <option value="es-AR">Español (Argentina)</option>
+          <option value="zh-CN">简体中文</option>
           <option value="nl">Nederlands</option>
         </select>
       </section>
@@ -246,9 +248,11 @@
       function findBestMatch(tag, available) {
         const normalized = (tag || '').toLowerCase();
         if (!normalized) return null;
-        if (available.includes(normalized)) return normalized;
+        const exact = available.find(opt => opt.toLowerCase() === normalized);
+        if (exact) return exact;
         const base = normalized.split('-')[0];
-        return available.includes(base) ? base : null;
+        const baseMatch = available.find(opt => opt.toLowerCase() === base);
+        return baseMatch || null;
       }
 
       function checkLanguageState() {

@@ -247,9 +247,11 @@
       function findBestMatch(tag, available) {
         const normalized = (tag || '').toLowerCase();
         if (!normalized) return null;
-        if (available.includes(normalized)) return normalized;
+        const exact = available.find(opt => opt.toLowerCase() === normalized);
+        if (exact) return exact;
         const base = normalized.split('-')[0];
-        return available.includes(base) ? base : null;
+        const baseMatch = available.find(opt => opt.toLowerCase() === base);
+        return baseMatch || null;
       }
 
       function checkLanguageState() {

@@ -23,10 +23,16 @@
     <meta name="twitter:image" content="https://stopcitingai.com/social.png" />
     <meta name="twitter:image:alt" content="ロボットと吹き出しの上に禁止マークが描かれ、その横に「But ChatGPT said」と書かれている" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" />
     <style>
+      @font-face {
+        font-display: swap;
+        font-family: 'Klee One';
+        font-style: normal;
+        font-weight: 600;
+        src: url('/fonts/klee-one-v13-japanese-600.woff2') format('woff2'),
+             url('/fonts/klee-one-v13-japanese-600.ttf') format('truetype');
+      }
       #lightdarktoggle {
         position: fixed;
         top: .5rem;
@@ -38,7 +44,7 @@
         text-align: center;
       }
       .intro {
-        font-family: 'Caveat Brush', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+        font-family: 'Klee One', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
         font-size: 2.5rem;
         width: fit-content;
         margin: 0 auto;

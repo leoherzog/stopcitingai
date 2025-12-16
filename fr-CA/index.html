@@ -23,10 +23,16 @@
     <meta name="twitter:image" content="https://stopcitingai.com/social.png" />
     <meta name="twitter:image:alt" content="Un robot et une bulle de parole barrée et le texte « Mais ChatGPT a dit… »" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" />
     <style>
+      @font-face {
+        font-display: swap;
+        font-family: 'Caveat';
+        font-style: normal;
+        font-weight: 700;
+        src: url('/fonts/caveat-v23-cyrillic_cyrillic-ext_latin_latin-ext-700.woff2') format('woff2'),
+             url('/fonts/caveat-v23-cyrillic_cyrillic-ext_latin_latin-ext-700.ttf') format('truetype');
+      }
       #lightdarktoggle {
         position: fixed;
         top: .5rem;
@@ -38,7 +44,7 @@
         text-align: center;
       }
       .intro {
-        font-family: 'Caveat Brush', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+        font-family: 'Caveat', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
         font-size: 2.5rem;
         width: fit-content;
         margin: 0 auto;

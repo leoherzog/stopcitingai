@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
   <head>
     <base target="_top" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>停止引用 AI</title>
-    <meta name="description" content="对"但是 ChatGPT 说..."的回应" />
+    <title>AIを引用するのはやめよう</title>
+    <meta name="description" content="「でもChatGPTはこう言ってて……」への返答" />
     <meta name="author" content="Leo Herzog | herzog.tech" />
-    <meta property="og:title" content="停止引用 AI" />
-    <meta property="og:description" content="对"但是 ChatGPT 说..."的回应" />
+    <meta property="og:title" content="AIを引用するのはやめよう" />
+    <meta property="og:description" content="「でもChatGPTはこう言ってて……」への返答" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://stopcitingai.com" />
     <meta property="og:image" content="https://stopcitingai.com/social.png" />
-    <meta property="og:image:alt" content="一个机器人和消息气泡，上面有一个以圆圈斜划的"ban"，附带文字"但是 ChatGPT 说"" />
+    <meta property="og:image:alt" content="ロボットと吹き出しの上に禁止マークが描かれ、その横に「But ChatGPT said」と書かれている" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="3000" />
     <meta property="og:image:height" content="1500" />
-    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale" content="ja_JP" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="停止引用 AI" />
-    <meta name="twitter:description" content="对"但是 ChatGPT 说..."的回应" />
+    <meta name="twitter:title" content="AIを引用するのはやめよう" />
+    <meta name="twitter:description" content="「でもChatGPTはこう言ってて……」への返答" />
     <meta name="twitter:image" content="https://stopcitingai.com/social.png" />
-    <meta name="twitter:image:alt" content="一个机器人和消息气泡，上面有一个以圆圈斜划的"ban"，附带文字"但是 ChatGPT 说"" />
+    <meta name="twitter:image:alt" content="ロボットと吹き出しの上に禁止マークが描かれ、その横に「But ChatGPT said」と書かれている" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
@@ -89,111 +89,95 @@
     </style>
   </head>
   <body>
-    <figure id="lightdarktoggle" aria-label="切换浅色或深色模式">☀️</figure>
+    <figure id="lightdarktoggle" aria-label="ライトモードとダークモードを切り替える">☀️</figure>
     <main class="container">
-      <h1 class="centered intro">"但是 <span class="ai">ChatGPT</span> 说…"</h1>
+      <h1 class="centered intro">「でも<span class="ai">ChatGPT</span>はこう言ってて……」</h1>
       <article>
-        <h1>之所以你在这，是因为你引用了 <mark>AI</mark> 当作你证明某件事的论据。</h1>
+        <h1>あなたは何かを示そうとして情報源に<mark>AI</mark>を引用したのでここに送られました。</h1>
       </article>
       <article>
-        <h2>像 ChatGPT、Claude、Gemini、豆包或文心一言等大语言模型的回答并非事实。</h2>
-        <p>
-        这些模型只是在预测一段语言序列中接下来最可能出现的文字。
-        </p>
-        <p>
-        它们生成的信息看起来很有说服力，但这些信息可能并不准确或可靠。
-        </p>
+        <h2>ChatGPT、Claude、Geminiなどの大規模言語モデル（LLM）の応答は事実ではありません。</h2>
+        <p>それらは順序に従ってどんな単語が次に来るのがもっともらしいか予測しています。</p>
+        <p>それらは説得力があるように見える情報を生成することはできますが、その情報は正確でなかったり、信頼できなかったりします。</p>
       </article>
       <article>
-        <h2>想象一下一个人已经读过万卷书，却记不住每本书里写了些什么。</h2>
+        <h2>何千冊もの本を読んだけれど、何をどの本で読んだか思い出せない人を想像してください。</h2>
         <hr>
-        <p>
-          大模型在什么方面<mark>出色</mark>？
-        </p>
-        <fieldset role="group" aria-label="示范提示词" disabled>
-          <textarea aria-label="例子一：帮我集思广益一下这个主意" readonly>帮我集思广益一下这个主意</textarea>
+        <p>その人はどんなことが<mark>得意</mark>でしょうか？</p>
+        <fieldset role="group" aria-label="プロンプトの例" disabled>
+          <textarea aria-label="例1: これについてのアイデアをブレインストーミングするのを助けてくれますか？" cols="2" readonly>これについてのアイデアをブレインストーミングするのを助けてくれますか？</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
-        <fieldset role="group" aria-label="示范提示词" disabled>
-          <textarea aria-label="例子二：这些里都有哪些相同的模式？" readonly>这些里都有哪些相同的模式？</textarea>
+        <fieldset role="group" aria-label="プロンプトの例" disabled>
+          <textarea aria-label="例2: これらに共通するパターンは何ですか？" readonly>これらに共通するパターンは何ですか？</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
-        <fieldset role="group" aria-label="示范提示词" disabled>
-          <textarea aria-label="例子三：帮我总结一下这个" readonly>帮我总结一下这个</textarea>
+        <fieldset role="group" aria-label="プロンプトの例" disabled>
+          <textarea aria-label="例3: これを要約してください" readonly>これを要約してください</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
-        <fieldset role="group" aria-label="示范提示词" disabled>
-          <textarea aria-label="例子四：有什么好的措辞吗？" readonly>有什么好的措辞吗？</textarea>
+        <fieldset role="group" aria-label="プロンプトの例" disabled>
+          <textarea aria-label="例4: これをうまく言い表すにはどうしたらいいですか？" readonly>これをうまく言い表すにはどうしたらいいですか？</textarea>
           <input type="submit" value="↑" aria-hidden="true" disabled />
         </fieldset>
         <hr>
-        <p>
-          大模型在什么方面<mark class="no">不擅长</mark>？
-        </p>
-        <fieldset role="group" aria-label="示范提示词" disabled>
-          <textarea aria-label="例子一：这件事是哪一天发生的？" readonly>这件事是哪一天发生的？</textarea>
+        <p>その人はどんなことが<mark class="no">苦手</mark>でしょうか？</p>
+        <fieldset role="group" aria-label="プロンプトの例" disabled>
+          <textarea aria-label="例1: これが起きたのは何日だったのか教えてください" readonly>これが起きたのは何日だったのか教えてください</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
-        <fieldset role="group" aria-label="示范提示词" disabled>
-          <textarea aria-label="例子二：接下来我应该对那个做什么呢？" readonly>接下来我应该对那个做什么呢？</textarea>
+        <fieldset role="group" aria-label="プロンプトの例" disabled>
+          <textarea aria-label="例2: 次に何をするべきですか？" readonly>次に何をするべきですか？</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
-        <fieldset role="group" aria-label="示范提示词" disabled>
-          <textarea aria-label="例子三：这个说法是真的吗？" readonly>这个说法是真的吗？</textarea>
+        <fieldset role="group" aria-label="プロンプトの例" disabled>
+          <textarea aria-label="例3: この主張は本当ですか？" readonly>この主張は本当ですか？</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
-        <fieldset role="group" aria-label="示范提示词" disabled>
-          <textarea aria-label="例子四：司法案例上，这有什么先例吗？" readonly>司法案例上，这有什么先例吗？</textarea>
+        <fieldset role="group" aria-label="プロンプトの例" disabled>
+          <textarea aria-label="例4: これについての判例は何ですか？" readonly>これについての判例は何ですか？</textarea>
           <input type="submit" value="↑" class="no" aria-hidden="true" />
         </fieldset>
         <hr>
-        <p>
-          确实，你<em>可能</em>会得到一个不错的答案或建议……但是大模型在给你答案的时候，它又是从哪本"书"里"记住"的呢？这些答案或建议只是文字的排列组合，并非事实。
-        </p>
+        <p>確かに、あなたは正しい答えや良い助言を得られる<em>可能性がないとは言い切れません</em>。しかし、それはどの「本」を「思い出し」て出した答えなのでしょうか？　その答えや助言は単語のよくある組み合わせであって、事実ではありません。</p>
       </article>
       <article>
-        <h2>不要复制粘贴聊天机器人的话，还发出来并当作权威信息。</h2>
-        <p>这样做时，你基本上只是在说："这里有一堆词语，它们在句子中经常一起出现。"</p>
-        <p>有时候这些词语可能有所帮助或很有见地，但它们并不是<strong>真理</strong>，也不应该成为一件事的最终判断依据。</p>
+        <h2>チャットボットが言ったことをコピペして信頼できるかのように誰かに送るのはやめましょう。</h2>
+        <p>それをしたとき、基本的にあなたは「ある文中に一緒によく出てくる単語はこれらです」と言っているようなものです。</p>
+        <p>時にはそれが役に立ったり本質を突いていたりしないとも限りませんが、<strong>真実</strong>ではありませんし、問題についての最終的な意見では決してありません。</p>
       </article>
       <article>
-        <h3>了解更多：</h3>
+        <h3>参考文献：</h3>
         <ul>
-          <li><a href="https://openai.com/index/why-language-models-hallucinate/" target="_blank">OpenAI：为什么语言模型会有幻觉</a></li>
-          <li><a href="https://www.ox.ac.uk/news/2023-11-20-large-language-models-pose-risk-science-false-answers-says-oxford-study" target="_blank">牛津大学：牛津研究称，大语言模型在用虚假答案威胁科学</a></li>
-          <li><a href="https://www.nytimes.com/2025/05/05/technology/ai-hallucinations-chatgpt-google.html" target="_blank">纽约时报：人工智能越来越强大，但其幻觉问题却日益严重</a> (<a href="https://archive.is/CD7Ge" target="_blank">Archive 的网页存档</a>)</li>
-          <li><a href="https://www.media.mit.edu/publications/NEJM-AI-people-overtrust-ai-generated-medical-advice-despite-low-accuracy/" target="_blank">麻省理工学院媒体实验室：人们过于相信 AI 生成的医学建议，即使其准确率很低</a></li>
-          <li><a href="https://www.businessinsider.com/why-ai-chatbots-hallucinate-openai-chatgpt-anthropic-claude-2025-9" target="_blank">商业内幕: OpenAI 研究员揭露，为什么 AI 聊天机器人会存在幻觉</a></li>
-          <li><a href="https://www.reuters.com/technology/artificial-intelligence/ai-hallucinations-court-papers-spell-trouble-lawyers-2025-02-18/" target="_blank">路透社：法庭文件中的 AI "幻觉"给律师带来麻烦</a></li>
-          <li><a href="https://www.nature.com/articles/d41586-025-03390-0" target="_blank">自然 (期刊)：AI 聊天机器人是马屁精——研究人员称这正在损害科学</a></li>
-          <li><a href="https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit" target="_blank">CNN：16岁少年父母起诉 OpenAI，称 ChatGPT 为其自杀提供建议</a></li>
-          <li><a href="https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb" target="_blank">金融时报：困扰 AI 的"幻觉"：为什么聊天机器人难以说实话</a> (<a href="https://archive.is/P1Wpc" target="_blank">Archive 的网页存档</a>)</li>
-          <li><a href="https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows" target="_blank">卫报：研究显示，"马屁精" AI 聊天机器人迎合用户喜好，告诉他们想听的话</a></li>
-          <li><a href="https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database" target="_blank">PCMag：氛围编程惨案：AI 代理失控，删除公司整个数据库</a></li>
+          <li><a href="https://openai.com/index/why-language-models-hallucinate/" target="_blank">OpenAI: Why language models hallucinate</a>（英文）</li>
+          <li><a href="https://www.ox.ac.uk/news/2023-11-20-large-language-models-pose-risk-science-false-answers-says-oxford-study" target="_blank">Oxford University: Large Language Models pose risk to science with false answers, says Oxford study</a>（英文）</li>
+          <li><a href="https://www.nytimes.com/2025/05/05/technology/ai-hallucinations-chatgpt-google.html" target="_blank">New York Times: A.I. Is Getting More Powerful, but Its Hallucinations Are Getting Worse</a> (<a href="https://archive.is/CD7Ge" target="_blank">Archived Version</a>)（英文）</li>
+          <li><a href="https://www.media.mit.edu/publications/NEJM-AI-people-overtrust-ai-generated-medical-advice-despite-low-accuracy/" target="_blank">MIT Media Lab: People Overtrust AI-Generated Medical Advice despite Low Accuracy</a>（英文）</li>
+          <li><a href="https://www.businessinsider.com/why-ai-chatbots-hallucinate-openai-chatgpt-anthropic-claude-2025-9" target="_blank">Business Insider: Why AI chatbots hallucinate, according to OpenAI researchers</a>（英文）</li>
+          <li><a href="https://www.reuters.com/technology/artificial-intelligence/ai-hallucinations-court-papers-spell-trouble-lawyers-2025-02-18/" target="_blank">Reuters: AI 'hallucinations' in court papers spell trouble for lawyers</a>（英文）</li>
+          <li><a href="https://www.nature.com/articles/d41586-025-03390-0" target="_blank">Nature: AI chatbots are sycophants — researchers say it’s harming science</a>（英文）</li>
+          <li><a href="https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit" target="_blank">CNN: Parents of 16-year-old sue OpenAI, claiming ChatGPT advised on his suicide</a>（英文）</li>
+          <li><a href="https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb" target="_blank">Financial Times: The ‘hallucinations’ that haunt AI: why chatbots struggle to tell the truth</a> (<a href="https://archive.is/P1Wpc" target="_blank">Archived Version</a>)（英文）</li>
+          <li><a href="https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows" target="_blank">The Guardian: ‘Sycophantic’ AI chatbots tell users what they want to hear, study shows</a>（英文）</li>
+          <li><a href="https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database" target="_blank">PCMag: Vibe Coding Fiasco: AI Agent Goes Rogue, Deletes Company’s Entire Database</a>（英文）</li>
         </ul>
       </article>
       <article class="centered">
-        <h3>把这个网站发给那个和你说：
-          <br />
-          "但是 <span class="ai">ChatGPT</span> 说..."</h3>
-        <button id="share"><span class="rotate">➤</span> 转发</button>
+        <h3>誰かがあなたに<br />「でも<span class="ai">ChatGPT</span>はこう言ってて……」<br />と言ったらこれを送ってください</h3>
+        <button id="share"><span class="rotate">➤</span> 共有</button>
       </article>
       <section class="centered">
-        <p>
-          我喜欢大语言模型，我喜欢机器学习。
-          <br />
-          我只是不喜欢看着聪明人自己关掉大脑。
-          <br />
-          <a href="https://herzog.tech" target="_blank" style="text-decoration: none;" aria-label="更多关于 Leo Herzog">
+        <p>私はLLMが好きです。私は機械学習が好きです。<br />私は賢い人達が頭を使わなくなるのを見るのが好きではないだけです。<br />
+          <a href="https://herzog.tech" target="_blank" style="text-decoration: none;" aria-label="Leo Herzogについて詳しく知る">
             ❤
           </a>
         </p>
-        <a href="https://github.com/leoherzog/stopcitingai" target="_blank" aria-label="在 GitHub 上 Star">
-          <button id="star" class="contrast">★ 在 GitHub 上 Star</button>
+        <a href="https://github.com/leoherzog/stopcitingai" target="_blank" aria-label="Star on GitHub">
+          <button id="star" class="contrast">★ Star on GitHub</button>
         </a>
       </section>
       <section>
-        <select id="language" aria-label="选择语言">
+        <select id="language" aria-label="言語を選択してください">
           <option value="en">English</option>
           <option value="es">Español</option>
           <option value="es-AR">Español (Argentina)</option>
@@ -217,8 +201,8 @@
         if (navigator.share) {
           try {
             await navigator.share({
-              "title": '停止引用 AI',
-              "text": '对"但是 ChatGPT 说..."的回应',
+              "title": 'AIを引用するのはやめよう',
+              "text": '「でもChatGPTはこう言ってて……」への返答',
               "url": window.location.href
             });
           } catch (err) {
@@ -226,7 +210,7 @@
           }
         } else {
           navigator.clipboard.writeText(window.location.href);
-          alert('链接已复制到剪切板！');
+          alert('リンクをクリップボードにコピーしました！');
         }
       }
 
@@ -313,7 +297,7 @@
           Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = urlParams.get('ai'));
         } else {
           setInterval(function() {
-            const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Apple Intelligence', 'Google AI Mode', 'Bing AI', 'Perplexity', '豆包', '文心一言', '通义千问', '智谱清言'];
+            const models = ['ChatGPT', 'Claude', 'Gemini', 'Copilot', 'Llama', 'Apple Intelligence', 'Google AI Mode', 'Bing AI', 'Perplexity'];
             Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = models[Math.floor(Math.random() * models.length)]);
           }, 3000);
         }
@@ -327,7 +311,7 @@
           return res.json();
         })
         .then(function(data) {
-          document.getElementById('star').textContent = 'GitHub 上 ★ ' + data.stargazers_count.toLocaleString() + ' 个 Star';
+          document.getElementById('star').textContent = '★ ' + data.stargazers_count.toLocaleString() + ' Stars on GitHub';
         });
       });
     </script>

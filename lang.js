@@ -1,5 +1,7 @@
 function redirectToLanguage(lang) {
-  window.location.assign(window.location.origin + '/' + lang + '/');
+  // English is at root, other languages in subdirectories
+  const path = lang === 'en' ? '/' : '/' + lang + '/';
+  window.location.assign(window.location.origin + path);
 }
 
 function isDirectNavigation() {

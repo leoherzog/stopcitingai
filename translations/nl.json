@@ -1,0 +1,116 @@
+{
+  "lang": "nl",
+  "locale": "nl_NL",
+  "language_name": "Nederlands",
+  "font": "caveat",
+  "ai_models": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Copilot",
+    "Llama",
+    "Apple Intelligence",
+    "Google AI Mode",
+    "Bing AI",
+    "Perplexity"
+  ],
+  "strings": {
+    "meta_title": "Stop met het citeren van AI",
+    "meta_description": "Een antwoord op ‘Maar ChatGPT zei dat…’",
+    "og_image_alt": "Een robot en tekstballon met een ‘verboden’ cirkel er omheen en de tekst ‘Maar ChatGPT zei dat…’",
+    "twitter_description": "Een antwoord op ‘Maar ChatGPT zei dat…’",
+    "twitter_image_alt": "Een robot en tekstballon met een ‘verboden’ cirkel er omheen en de tekst ‘Maar ChatGPT zei dat…’",
+    "toggle_theme_label": "Schakel tussen lichte en donkere modus",
+    "but_ai_said": "&ldquo;Maar {ai} zei dat…&rdquo;",
+    "sent_here_because": "Je bent hier omdat je <mark>AI</mark> als een bron gebruikte om een punt te maken.",
+    "not_facts_heading": "Antwoorden van Large Language Models (LLM's) als ChatGPT, Claude en Gemini zijn geen feiten.",
+    "not_facts_p1": "Ze voorspellen welke woorden het waarschijnlijkst volgen op woorden in een zin.",
+    "not_facts_p2": "De informatie die ze geven kan overtuigend klinken, maar die hoeft niet waar of betrouwbaar te zijn.",
+    "imagine_heading": "Stel je iemand voor die duizenden boeken gelezen heeft, maar niet onthouden heeft waar die wat las.",
+    "good_at_label": "Waar zou die persoon <mark>goed</mark> in zijn?",
+    "bad_at_label": "En waar zou die persoon <mark class=\"no\">slecht</mark> in zijn?",
+    "example_prompt_label": "Voorbeeld-prompt",
+    "good_prompts": [
+      "Help me ideeën te brainstormen over …?",
+      "Welke patronen herken je in …?",
+      "Maak een samenvatting van …",
+      "Hoe kan ik dit het beste verwoorden?"
+    ],
+    "bad_prompts": [
+      "Wanneer gebeurde dit?",
+      "Wat zou ik als volgende moeten doen aan …?",
+      "Is wat hier beweerd wordt waar?",
+      "Wat is het juridische precedent hiervoor?"
+    ],
+    "might_get_answer": "Natuurlijk, je <em>kan</em> een kloppend antwoord of goed advies krijgen… maar welke “boeken” zijn het die de AI “herinnerde” om tot dat antwoord of advies te komen? Het antwoord is een veelvoorkomende combinatie van woorden, geen feit.",
+    "dont_copy_paste_heading": "Kopiëer niets wat een chatbot zegt alsof het een feit is.",
+    "dont_copy_paste_p1": "Daarmee zeg je eigenlijk: “hier is een handjevol woorden dat vaak samen gaat in een zin.”",
+    "dont_copy_paste_p2": "Soms kan het handig zijn of inzicht geven. Maar het is geen <strong>waarheid</strong>, en het is nooit een definitieve bron in een kwestie.",
+    "further_reading_heading": "Lees meer:",
+    "share_cta": "Stuur dit naar iemand die net zei:",
+    "share_cta_quote": "&ldquo;Maar {ai} zei dat…&rdquo;",
+    "share_button": "Delen",
+    "footer_like_llms": "I vind LLM's leuk. I vind Machine Learning leuk.",
+    "footer_brains_off": "Maar ik vind het zonde om te zien wanneer slimme mensen hun hersens uit zetten.",
+    "footer_about_label": "Meer over Leo Herzog",
+    "github_star_button": "Geef een ster op GitHub",
+    "github_star_label": "Geef een ster op GitHub",
+    "github_stars_format": "★ {count} sterren op GitHub",
+    "select_language_label": "Kies je taal",
+    "clipboard_alert": "Link gekopiëerd naar je klembord!",
+    "share_title": "Stop met het citeren van AI",
+    "share_text": "Een antwoord op ‘Maar ChatGPT zei dat…’"
+  },
+  "further_reading": [
+    {
+      "text": "OpenAI: Why language models hallucinate",
+      "url": "https://openai.com/index/why-language-models-hallucinate/"
+    },
+    {
+      "text": "Oxford University: Large Language Models pose risk to science with false answers, says Oxford study",
+      "url": "https://www.ox.ac.uk/news/2023-11-20-large-language-models-pose-risk-science-false-answers-says-oxford-study"
+    },
+    {
+      "text": "New York Times: A.I. Is Getting More Powerful, but Its Hallucinations Are Getting Worse",
+      "url": "https://www.nytimes.com/2025/05/05/technology/ai-hallucinations-chatgpt-google.html",
+      "archived_url": "https://archive.is/CD7Ge"
+    },
+    {
+      "text": "MIT Media Lab: People Overtrust AI-Generated Medical Advice despite Low Accuracy",
+      "url": "https://www.media.mit.edu/publications/NEJM-AI-people-overtrust-ai-generated-medical-advice-despite-low-accuracy/"
+    },
+    {
+      "text": "Business Insider: Why AI chatbots hallucinate, according to OpenAI researchers",
+      "url": "https://www.businessinsider.com/why-ai-chatbots-hallucinate-openai-chatgpt-anthropic-claude-2025-9"
+    },
+    {
+      "text": "Reuters: AI 'hallucinations' in court papers spell trouble for lawyers",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/ai-hallucinations-court-papers-spell-trouble-lawyers-2025-02-18/"
+    },
+    {
+      "text": "MIT Technology Review: How AI is introducing errors into courtrooms",
+      "url": "https://www.technologyreview.com/2025/05/20/1116823/how-ai-is-introducing-errors-into-courtrooms/"
+    },
+    {
+      "text": "Nature: AI chatbots are sycophants — researchers say it's harming science",
+      "url": "https://www.nature.com/articles/d41586-025-03390-0"
+    },
+    {
+      "text": "CNN: Parents of 16-year-old sue OpenAI, claiming ChatGPT advised on his suicide",
+      "url": "https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit"
+    },
+    {
+      "text": "Financial Times: The 'hallucinations' that haunt AI: why chatbots struggle to tell the truth",
+      "url": "https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb",
+      "archived_url": "https://archive.is/P1Wpc"
+    },
+    {
+      "text": "The Guardian: 'Sycophantic' AI chatbots tell users what they want to hear, study shows",
+      "url": "https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows"
+    },
+    {
+      "text": "PCMag: Vibe Coding Fiasco: AI Agent Goes Rogue, Deletes Company's Entire Database",
+      "url": "https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database"
+    }
+  ]
+}

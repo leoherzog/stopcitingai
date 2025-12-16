@@ -1,0 +1,120 @@
+{
+  "lang": "zh-CN",
+  "locale": "zh_CN",
+  "language_name": "简体中文",
+  "font": "caveat",
+  "ai_models": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Copilot",
+    "Llama",
+    "Apple Intelligence",
+    "Google AI Mode",
+    "Bing AI",
+    "Perplexity",
+    "豆包",
+    "文心一言",
+    "通义千问",
+    "智谱清言"
+  ],
+  "strings": {
+    "meta_title": "停止引用 AI",
+    "meta_description": "对“但是 ChatGPT 说...”的回应",
+    "og_image_alt": "一个机器人和消息气泡，上面有一个以圆圈斜划的“ban”，附带文字“但是 ChatGPT 说”",
+    "twitter_description": "对“但是 ChatGPT 说...”的回应",
+    "twitter_image_alt": "一个机器人和消息气泡，上面有一个以圆圈斜划的“ban”，附带文字“但是 ChatGPT 说”",
+    "toggle_theme_label": "切换浅色或深色模式",
+    "but_ai_said": "&ldquo;但是 {ai} 说…&rdquo;",
+    "sent_here_because": "之所以你在这，是因为你引用了 <mark>AI</mark> 当作你证明某件事的论据。",
+    "not_facts_heading": "像 ChatGPT、Claude、Gemini、豆包或文心一言等大语言模型的回答并非事实。",
+    "not_facts_p1": "这些模型只是在预测一段语言序列中接下来最可能出现的文字。",
+    "not_facts_p2": "它们生成的信息看起来很有说服力，但这些信息可能并不准确或可靠。",
+    "imagine_heading": "想象一下一个人已经读过万卷书，却记不住每本书里写了些什么。",
+    "good_at_label": "大模型在什么方面<mark>出色</mark>？",
+    "bad_at_label": "大模型在什么方面<mark class=\"no\">不擅长</mark>？",
+    "example_prompt_label": "示范提示词",
+    "good_prompts": [
+      "帮我集思广益一下这个主意",
+      "这些里都有哪些相同的模式？",
+      "帮我总结一下这个",
+      "有什么好的措辞吗？"
+    ],
+    "bad_prompts": [
+      "这件事是哪一天发生的？",
+      "接下来我应该对那个做什么呢？",
+      "这个说法是真的吗？",
+      "司法案例上，这有什么先例吗？"
+    ],
+    "might_get_answer": "确实，你<em>可能</em>会得到一个不错的答案或建议……但是大模型在给你答案的时候，它又是从哪本“书”里“记住”的呢？这些答案或建议只是文字的排列组合，并非事实。",
+    "dont_copy_paste_heading": "不要复制粘贴聊天机器人的话，还发出来并当作权威信息。",
+    "dont_copy_paste_p1": "这样做时，你基本上只是在说：“这里有一堆词语，它们在句子中经常一起出现。”",
+    "dont_copy_paste_p2": "有时候这些词语可能有所帮助或很有见地，但它们并不是<strong>真理</strong>，也不应该成为一件事的最终判断依据。",
+    "further_reading_heading": "了解更多：",
+    "share_cta": "把这个网站发给那个和你说：",
+    "share_cta_quote": "&ldquo;但是 {ai} 说...&rdquo;",
+    "share_button": "转发",
+    "footer_like_llms": "我喜欢大语言模型，我喜欢机器学习。",
+    "footer_brains_off": "我只是不喜欢看着聪明人自己关掉大脑。",
+    "footer_about_label": "更多关于 Leo Herzog",
+    "github_star_button": "在 GitHub 上 Star",
+    "github_star_label": "在 GitHub 上 Star",
+    "github_stars_format": "GitHub 上 ★ {count} 个 Star",
+    "select_language_label": "选择语言",
+    "clipboard_alert": "链接已复制到剪切板！",
+    "share_title": "停止引用 AI",
+    "share_text": "对“但是 ChatGPT 说...”的回应"
+  },
+  "further_reading": [
+    {
+      "text": "OpenAI：为什么语言模型会有幻觉",
+      "url": "https://openai.com/index/why-language-models-hallucinate/"
+    },
+    {
+      "text": "牛津大学：牛津研究称，大语言模型在用虚假答案威胁科学",
+      "url": "https://www.ox.ac.uk/news/2023-11-20-large-language-models-pose-risk-science-false-answers-says-oxford-study"
+    },
+    {
+      "text": "纽约时报：人工智能越来越强大，但其幻觉问题却日益严重",
+      "url": "https://www.nytimes.com/2025/05/05/technology/ai-hallucinations-chatgpt-google.html",
+      "archived_url": "https://archive.is/CD7Ge"
+    },
+    {
+      "text": "麻省理工学院媒体实验室：人们过于相信 AI 生成的医学建议，即使其准确率很低",
+      "url": "https://www.media.mit.edu/publications/NEJM-AI-people-overtrust-ai-generated-medical-advice-despite-low-accuracy/"
+    },
+    {
+      "text": "商业内幕: OpenAI 研究员揭露，为什么 AI 聊天机器人会存在幻觉",
+      "url": "https://www.businessinsider.com/why-ai-chatbots-hallucinate-openai-chatgpt-anthropic-claude-2025-9"
+    },
+    {
+      "text": "路透社：法庭文件中的 AI “幻觉”给律师带来麻烦",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/ai-hallucinations-court-papers-spell-trouble-lawyers-2025-02-18/"
+    },
+    {
+      "text": "MIT 科技评论：AI 如何在法庭上引入错误",
+      "url": "https://www.technologyreview.com/2025/05/20/1116823/how-ai-is-introducing-errors-into-courtrooms/"
+    },
+    {
+      "text": "自然 (期刊)：AI 聊天机器人是马屁精——研究人员称这正在损害科学",
+      "url": "https://www.nature.com/articles/d41586-025-03390-0"
+    },
+    {
+      "text": "CNN：16岁少年父母起诉 OpenAI，称 ChatGPT 为其自杀提供建议",
+      "url": "https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit"
+    },
+    {
+      "text": "金融时报：困扰 AI 的“幻觉”：为什么聊天机器人难以说实话",
+      "url": "https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb",
+      "archived_url": "https://archive.is/P1Wpc"
+    },
+    {
+      "text": "卫报：研究显示，“马屁精” AI 聊天机器人迎合用户喜好，告诉他们想听的话",
+      "url": "https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows"
+    },
+    {
+      "text": "PCMag：氛围编程惨案：AI 代理失控，删除公司整个数据库",
+      "url": "https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "lang": "id",
+  "locale": "id_ID",
+  "language_name": "Indonesia",
+  "font": "caveat",
+  "ai_models": [
+    "ChatGPT",
+    "DeepSeek",
+    "Claude",
+    "Gemini",
+    "Copilot",
+    "Llama",
+    "Apple Intelligence",
+    "Google AI Mode",
+    "Bing AI",
+    "Perplexity"
+  ],
+  "strings": {
+    "meta_title": "Jangan Ngutip AI",
+    "meta_description": "Jawaban untuk 'Tapi ChatGPT bilang…'",
+    "og_image_alt": "Robot dan gelembung bicara dengan tanda 'larangan' dan teks 'Tapi ChatGPT bilang'",
+    "twitter_description": "Jawaban untuk 'Tapi ChatGPT bilang…'",
+    "twitter_image_alt": "Robot dan gelembung bicara dengan tanda 'larangan' dan teks 'Tapi ChatGPT bilang…'",
+    "toggle_theme_label": "Ubah mode terang dan gelap",
+    "but_ai_said": "&ldquo;Tapi {ai} Bilang…&rdquo;",
+    "sent_here_because": "Kamu dikirim ke sini karena kamu mengutip <mark>AI</mark> sebagai sumber untuk membuktikan sesuatu.",
+    "not_facts_heading": "Respons untuk Chat AI seperti ChatGPT, Gemini, atau DeepSeek bukanlah fakta.",
+    "not_facts_p1": "AI tuh cuma memprediksi kata apa yang paling besar kemungkinannya mengikuti kata sebelumnya.",
+    "not_facts_p2": "AI bisa membuat informasi yang kelihatannya meyakinkan, tapi sebenarnya informasi yang tidak akurat atau tidak bisa diandalkan.",
+    "imagine_heading": "Bayangkan seseorang yang sudah membaca ribuan buku, tapi tidak ingat mereka membaca apa di buku mana.",
+    "good_at_label": "Orang kayak begitu <mark>jago</mark> kalau ditanyai soal apa?",
+    "bad_at_label": "Orang kayak begitu <mark class=\"no\">jangan</mark> dimintai pendapat soal apa? (hal-hal faktual ataupun opini)",
+    "example_prompt_label": "Contoh prompt",
+    "good_prompts": [
+      "Bisa bantu aku cari ide untuk hal ini?",
+      "Apa pola yang sama dari beberapa hal ini?",
+      "Bantu aku meringkas tulisan ini",
+      "Bagaimana cara terbaik untuk mengatakan ini?"
+    ],
+    "bad_prompts": [
+      "Kapan hal ini terjadi?",
+      "Lalu aku harus gimana?",
+      "Apakah ini benar?",
+      "Apakah ada contoh kasus pengadilan untuk masalah seperti ini?"
+    ],
+    "might_get_answer": "Ya tentu saja, kamu <em>kemungkinan</em> mendapat jawaban yang benar atau nasihat yang bagus… tapi orang seperti itu ketika menjawab, dia \"mengingat\" dari \"buku\" apa? Jawaban atau nasihatnya sebenarnya cuma kombinasi kata-kata yang paling tinggi frekuensinya, itu bukanlah fakta.",
+    "dont_copy_paste_heading": "Jadi, jangan cuma kopipas (salin-tempel) sesuatu yang dikatakan oleh bot AI dan dikirimkan ke orang lain seakan-akan itu adalah kebenaran yang memiliki otoritas.",
+    "dont_copy_paste_p1": "Ketika kamu melakukan itu (makanya kamu dikirim ke sini), kamu sebenarnya mengatakan: \"ini adalah sekian ratus kata-kata yang biasanya muncul bersamaan membentuk kalimat.\"",
+    "dont_copy_paste_p2": "Kadang tulisan hasil chat AI bisa membantu atau mencerahkan. Tapi itu bukanlah <strong>kebenaran</strong>, dan jelas bukanlah kata-kata final yang digunakan untuk memenangkan argumentasi. Begitu.",
+    "further_reading_heading": "Bacaan lebih lanjut:",
+    "share_cta": "Kirimkan situs ini kepada orang yang baru saja bilang,",
+    "share_cta_quote": "&ldquo;Tapi {ai} Bilang...&rdquo;",
+    "share_button": "Bagikan",
+    "footer_like_llms": "Saya sih suka <a href=\"https://id.wikipedia.org/wiki/Model_bahasa_besar\" target=\"_blank\">Model Bahasa Besar</a>. Saya juga suka <a href=\"https://id.wikipedia.org/wiki/Pemelajaran_mesin\" target=\"_blank\">Pemelajaran Mesin</a>.",
+    "footer_brains_off": "Saya cuma tidak suka melihat orang pintar berhenti menggunakan otak mereka.",
+    "footer_about_label": "Tentang saya: Leo Herzog",
+    "github_star_button": "Bintang di GitHub",
+    "github_star_label": "Bintang di GitHub",
+    "github_stars_format": "★ {count} Bintang di GitHub",
+    "select_language_label": "Pilih bahasa lain",
+    "clipboard_alert": "Pranala telah disalin ke clipboard! Tinggal tempelkan (Ctrl-V / Paste) ke WA orang itu!",
+    "share_title": "Jangan Ngutip AI",
+    "share_text": "Jawaban untuk 'Tapi ChatGPT bilang…'"
+  },
+  "further_reading": [
+    {
+      "text": "OpenAI: Why language models hallucinate",
+      "url": "https://openai.com/index/why-language-models-hallucinate/",
+      "note": "OpenAI: Kenapa Model Bahasa AI Berhalusinasi"
+    },
+    {
+      "text": "Oxford University: Large Language Models pose risk to science with false answers",
+      "url": "https://www.ox.ac.uk/news/2023-11-20-large-language-models-pose-risk-science-false-answers-says-oxford-study",
+      "note": "Universitas Oxford: Model Bahasa Besar Berisiko Memberi Jawaban Salah",
+      "wiki_link": "https://id.wikipedia.org/wiki/Model_bahasa_besar"
+    },
+    {
+      "text": "New York Times: A.I. Is Getting More Powerful, but Its Hallucinations Are Getting Worse",
+      "url": "https://www.nytimes.com/2025/05/05/technology/ai-hallucinations-chatgpt-google.html",
+      "archived_url": "https://archive.is/CD7Ge",
+      "note": "Koran NY Times: AI Semakin Canggih, Tapi Juga Semakin Halu"
+    },
+    {
+      "text": "MIT Media Lab: People Overtrust AI-Generated Medical Advice despite Low Accuracy",
+      "url": "https://www.media.mit.edu/publications/NEJM-AI-people-overtrust-ai-generated-medical-advice-despite-low-accuracy/",
+      "note": "Orang Terlalu Percaya Nasihat Medis Buatan AI Walaupun Tidak Akurat"
+    },
+    {
+      "text": "Business Insider: Why AI chatbots hallucinate, according to OpenAI researchers",
+      "url": "https://www.businessinsider.com/why-ai-chatbots-hallucinate-openai-chatgpt-anthropic-claude-2025-9",
+      "note": "Mengapa Chat AI Berhalusinasi"
+    },
+    {
+      "text": "Reuters: AI 'hallucinations' in court papers spell trouble for lawyers",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/ai-hallucinations-court-papers-spell-trouble-lawyers-2025-02-18/",
+      "note": "Halusinasi AI di Berkas Pengadilan Bencana Bagi Pengacara"
+    },
+    {
+      "text": "MIT Technology Review: How AI is introducing errors into courtrooms",
+      "url": "https://www.technologyreview.com/2025/05/20/1116823/how-ai-is-introducing-errors-into-courtrooms/",
+      "note": "Bagaimana AI Menyebabkan Kesalahan di Ruang Pengadilan"
+    },
+    {
+      "text": "Nature: AI chatbots are sycophants — researchers say it's harming science",
+      "url": "https://www.nature.com/articles/d41586-025-03390-0",
+      "note": "Jurnal Nature: Chat AI Itu Penjilat — Peneliti Mengungkapkan AI Melukai Ilmu Pengetahuan"
+    },
+    {
+      "text": "CNN: Parents of 16-year-old sue OpenAI, claiming ChatGPT advised on his suicide",
+      "url": "https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit",
+      "note": "Orangtua Anak 16 Tahun Menuntut Perusahaan OpenAI, Mengatakan ChatGPT Menasihati Anak Mereka Bundir"
+    },
+    {
+      "text": "Financial Times: The 'hallucinations' that haunt AI: why chatbots struggle to tell the truth",
+      "url": "https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb",
+      "archived_url": "https://archive.is/P1Wpc",
+      "note": "Halusinasi yang Menghantui AI: Mengapa Chat AI Kesulitan Mengatakan Kebenaran"
+    },
+    {
+      "text": "The Guardian: 'Sycophantic' AI chatbots tell users what they want to hear, study shows",
+      "url": "https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows",
+      "note": "Chat AI 'Penjilat' Hanya Mengatakan Apa yang Ingin Didengar Oleh Pengguna"
+    },
+    {
+      "text": "PCMag: Vibe Coding Fiasco: AI Agent Goes Rogue, Deletes Company's Entire Database",
+      "url": "https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database",
+      "note": "Kisruh Pemrograman: Gara-Gara AI Bermasalah, Basis Data Perusahaan Terhapus Semua"
+    }
+  ]
+}

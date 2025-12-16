@@ -1,0 +1,126 @@
+{
+  "lang": "ja",
+  "locale": "ja_JP",
+  "language_name": "日本語",
+  "font": "klee-one",
+  "ai_models": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Copilot",
+    "Llama",
+    "Apple Intelligence",
+    "Google AI Mode",
+    "Bing AI",
+    "Perplexity"
+  ],
+  "strings": {
+    "meta_title": "AIを引用するのはやめよう",
+    "meta_description": "「でもChatGPTはこう言ってて……」への返答",
+    "og_image_alt": "ロボットと吹き出しの上に禁止マークが描かれ、その横に「But ChatGPT said」と書かれている",
+    "twitter_description": "「でもChatGPTはこう言ってて……」への返答",
+    "twitter_image_alt": "ロボットと吹き出しの上に禁止マークが描かれ、その横に「But ChatGPT said」と書かれている",
+    "toggle_theme_label": "ライトモードとダークモードを切り替える",
+    "but_ai_said": "「でも{ai}はこう言ってて……」",
+    "sent_here_because": "あなたは何かを示そうとして情報源に<mark>AI</mark>を引用したのでここに送られました。",
+    "not_facts_heading": "ChatGPT、Claude、Geminiなどの大規模言語モデル（LLM）の応答は事実ではありません。",
+    "not_facts_p1": "それらは順序に従ってどんな単語が次に来るのがもっともらしいか予測しています。",
+    "not_facts_p2": "それらは説得力があるように見える情報を生成することはできますが、その情報は正確でなかったり、信頼できなかったりします。",
+    "imagine_heading": "何千冊もの本を読んだけれど、何をどの本で読んだか思い出せない人を想像してください。",
+    "good_at_label": "その人はどんなことが<mark>得意</mark>でしょうか？",
+    "bad_at_label": "その人はどんなことが<mark class=\"no\">苦手</mark>でしょうか？",
+    "example_prompt_label": "プロンプトの例",
+    "good_prompts": [
+      "これについてブレインストーミングを助けてくれますか？",
+      "これらに共通するパターンは何ですか？",
+      "これを要約してください",
+      "これをうまく言い表すにはどうしたらいいですか？"
+    ],
+    "bad_prompts": [
+      "これが起きたのは何日だったのか教えてください",
+      "次に何をするべきですか？",
+      "この主張は本当ですか？",
+      "これについての判例は何ですか？"
+    ],
+    "might_get_answer": "確かに、あなたは正しい答えや良い助言を得られる<em>可能性がないとは言い切れません</em>。しかし、それはどの「本」を「思い出し」て出した答えなのでしょうか？　その答えや助言は単語のよくある組み合わせであって、事実ではありません。",
+    "dont_copy_paste_heading": "チャットボットが言ったことをコピペして信頼できるかのように誰かに送るのはやめましょう。",
+    "dont_copy_paste_p1": "それをしたとき、基本的にあなたは「ある文中に一緒によく出てくる単語はこれらです」と言っているようなものです。",
+    "dont_copy_paste_p2": "時にはそれが役に立ったり本質を突いていたりしないとも限りませんが、<strong>真実</strong>ではありませんし、問題についての最終的な意見では決してありません。",
+    "further_reading_heading": "参考文献：",
+    "share_cta": "誰かがあなたに",
+    "share_cta_quote": "「でも{ai}はこう言ってて……」",
+    "share_cta_suffix": "と言ったらこれを送ってください",
+    "share_button": "共有",
+    "footer_like_llms": "私はLLMが好きです。私は機械学習が好きです。",
+    "footer_brains_off": "私は賢い人達が頭を使わなくなるのを見るのが好きではないだけです。",
+    "footer_about_label": "Leo Herzogについて詳しく知る",
+    "github_star_button": "Star on GitHub",
+    "github_star_label": "Star on GitHub",
+    "github_stars_format": "★ {count} Stars on GitHub",
+    "select_language_label": "言語を選択してください",
+    "clipboard_alert": "リンクをクリップボードにコピーしました！",
+    "share_title": "AIを引用するのはやめよう",
+    "share_text": "「でもChatGPTはこう言ってて……」への返答"
+  },
+  "further_reading": [
+    {
+      "text": "OpenAI: 言語モデルでハルシネーションがおきる理由",
+      "url": "https://openai.com/index/why-language-models-hallucinate/"
+    },
+    {
+      "text": "Oxford University: Large Language Models pose risk to science with false answers, says Oxford study",
+      "url": "https://www.ox.ac.uk/news/2023-11-20-large-language-models-pose-risk-science-false-answers-says-oxford-study",
+      "note": "英文"
+    },
+    {
+      "text": "New York Times: A.I. Is Getting More Powerful, but Its Hallucinations Are Getting Worse",
+      "url": "https://www.nytimes.com/2025/05/05/technology/ai-hallucinations-chatgpt-google.html",
+      "archived_url": "https://archive.is/CD7Ge",
+      "note": "英文"
+    },
+    {
+      "text": "MIT Media Lab: People Overtrust AI-Generated Medical Advice despite Low Accuracy",
+      "url": "https://www.media.mit.edu/publications/NEJM-AI-people-overtrust-ai-generated-medical-advice-despite-low-accuracy/",
+      "note": "英文"
+    },
+    {
+      "text": "Business Insider: Why AI chatbots hallucinate, according to OpenAI researchers",
+      "url": "https://www.businessinsider.com/why-ai-chatbots-hallucinate-openai-chatgpt-anthropic-claude-2025-9",
+      "note": "英文"
+    },
+    {
+      "text": "Reuters: AI 'hallucinations' in court papers spell trouble for lawyers",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/ai-hallucinations-court-papers-spell-trouble-lawyers-2025-02-18/",
+      "note": "英文"
+    },
+    {
+      "text": "MIT Technology Review: AI幻覚、法廷にも　知的労働の最高峰がなぜ騙されるのか？",
+      "url": "https://www.technologyreview.jp/s/362389/how-ai-is-introducing-errors-into-courtrooms/"
+    },
+    {
+      "text": "Nature: AI chatbots are sycophants — researchers say it's harming science",
+      "url": "https://www.nature.com/articles/d41586-025-03390-0",
+      "note": "英文"
+    },
+    {
+      "text": "CNN: 「チャットＧＰＴが自殺を手助け」　１６歳の息子を失った夫婦、オープンＡＩを提訴　米",
+      "url": "https://www.cnn.co.jp/tech/35237219.html"
+    },
+    {
+      "text": "Financial Times: The 'hallucinations' that haunt AI: why chatbots struggle to tell the truth",
+      "url": "https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb",
+      "archived_url": "https://archive.is/P1Wpc",
+      "note": "英文"
+    },
+    {
+      "text": "The Guardian: 'Sycophantic' AI chatbots tell users what they want to hear, study shows",
+      "url": "https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows",
+      "note": "英文"
+    },
+    {
+      "text": "PCMag: Vibe Coding Fiasco: AI Agent Goes Rogue, Deletes Company's Entire Database",
+      "url": "https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database",
+      "note": "英文"
+    }
+  ]
+}

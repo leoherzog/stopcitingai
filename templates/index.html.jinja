@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+  <head>
+    <base target="_top" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>{{ strings.meta_title }}</title>
+    <meta name="description" content="{{ strings.meta_description }}" />
+    <meta name="author" content="Leo Herzog | herzog.tech" />
+    <meta property="og:title" content="{{ strings.meta_title }}" />
+    <meta property="og:description" content="{{ strings.meta_description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stopcitingai.com" />
+    <meta property="og:image" content="https://stopcitingai.com/social.png" />
+    <meta property="og:image:alt" content="{{ strings.og_image_alt }}" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="3000" />
+    <meta property="og:image:height" content="1500" />
+    <meta property="og:locale" content="{{ locale }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ strings.meta_title }}" />
+    <meta name="twitter:description" content="{{ strings.twitter_description }}" />
+    <meta name="twitter:image" content="https://stopcitingai.com/social.png" />
+    <meta name="twitter:image:alt" content="{{ strings.twitter_image_alt }}" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+{{ pico_css }}
+    </style>
+    <style>
+      @font-face {
+        font-display: swap;
+        font-family: '{{ font_family }}';
+        font-style: normal;
+        font-weight: {{ font_weight }};
+        src: url('data:font/woff2;base64,{{ font_data }}') format('woff2');
+      }
+      #lightdarktoggle {
+        position: fixed;
+        top: .5rem;
+        left: .5rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .centered {
+        text-align: center;
+      }
+      .intro {
+        font-family: '{{ font_family }}', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive, system-ui;
+        font-size: 2.5rem;
+        width: fit-content;
+        margin: 0 auto;
+        padding-top: 15vh;
+        padding-right: 5%; /* visually centered since it's rotated */
+        height: 20vh;
+        transform: rotate(-10deg);
+      }
+      article {
+        margin: 20vh auto;
+      }
+      section {
+        margin: 10vh auto;
+      }
+      h1:only-child,
+      h2:only-child {
+        margin: 0;
+      }
+      fieldset[disabled],
+      fieldset[disabled] > * {
+        height: auto;
+        opacity: 1;
+        cursor: default;
+      }
+      .no {
+        color: white;
+        background-color: firebrick;
+        border-color: firebrick;
+        cursor: not-allowed;
+      }
+      .rotate {
+        display: inline-block;
+        transform: rotate(-45deg);
+      }
+      @media (min-width: 768px) {
+        #language {
+          width: fit-content;
+          float: right;
+        }
+      }
+      @media (min-width: 1280px) {
+        article {
+          max-width: 50vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <figure id="lightdarktoggle" aria-label="{{ strings.toggle_theme_label }}">☀️</figure>
+    <main class="container">
+      <h1 class="centered intro">{{ strings.but_ai_said | safe }}</h1>
+      <article>
+        <h1>{{ strings.sent_here_because | safe }}</h1>
+      </article>
+      <article>
+        <h2>{{ strings.not_facts_heading }}</h2>
+        <p>
+        {{ strings.not_facts_p1 }}
+        </p>
+        <p>
+        {{ strings.not_facts_p2 }}
+        </p>
+      </article>
+      <article>
+        <h2>{{ strings.imagine_heading }}</h2>
+        <hr>
+        <p>
+          {{ strings.good_at_label | safe }}
+        </p>
+        {% for prompt in strings.good_prompts %}
+        <fieldset role="group" aria-label="{{ strings.example_prompt_label }}" disabled>
+          <textarea aria-label="Example {{ loop.index }}: {{ prompt }}"{% if loop.first %} cols="2"{% endif %} readonly>{{ prompt }}</textarea>
+          <input type="submit" value="↑" aria-hidden="true" disabled />
+        </fieldset>
+        {% endfor %}
+        <hr>
+        <p>
+          {{ strings.bad_at_label | safe }}
+        </p>
+        {% for prompt in strings.bad_prompts %}
+        <fieldset role="group" aria-label="{{ strings.example_prompt_label }}" disabled>
+          <textarea aria-label="Example {{ loop.index }}: {{ prompt }}" readonly>{{ prompt }}</textarea>
+          <input type="submit" value="↑" class="no" aria-hidden="true" />
+        </fieldset>
+        {% endfor %}
+        <hr>
+        <p>
+          {{ strings.might_get_answer | safe }}
+        </p>
+      </article>
+      <article>
+        <h2>{{ strings.dont_copy_paste_heading }}</h2>
+        <p>{{ strings.dont_copy_paste_p1 }}</p>
+        <p>{{ strings.dont_copy_paste_p2 | safe }}</p>
+      </article>
+      <article>
+        <h3>{{ strings.further_reading_heading }}</h3>
+        <ul>
+          {% for link in further_reading %}
+          <li>
+            <a href="{{ link.url }}" target="_blank">{{ link.text }}</a>
+            {%- if link.archived_url %} (<a href="{{ link.archived_url }}" target="_blank">Archived Version</a>){% endif %}
+            {%- if link.note %} ({{ link.note }}){% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+      <article class="centered">
+        <h3>{{ strings.share_cta }}
+          <br />
+{{ strings.share_cta_quote | safe }}{% if strings.share_cta_suffix %}<br />{{ strings.share_cta_suffix }}{% endif %}</h3>
+        <button id="share"><span class="rotate">➤</span> {{ strings.share_button }}</button>
+      </article>
+      <section class="centered">
+        <p>
+          {{ strings.footer_like_llms | safe }}
+          <br />
+          {{ strings.footer_brains_off }}
+          <br />
+          <a href="https://herzog.tech" target="_blank" style="text-decoration: none;" aria-label="{{ strings.footer_about_label }}">
+            ❤
+          </a>
+        </p>
+        <a href="https://github.com/leoherzog/stopcitingai" target="_blank" aria-label="{{ strings.github_star_label }}">
+          <button id="star" class="contrast">★ {{ strings.github_star_button }}</button>
+        </a>
+      </section>
+      <section>
+        <select id="language" aria-label="{{ strings.select_language_label }}">
+          {% for language in languages %}
+          <option value="{{ language.code }}">{{ language.name }}</option>
+          {% endfor %}
+        </select>
+      </section>
+    </main>
+    <script>
+{{ lang_js }}
+    </script>
+    <script>
+      function toggleTheme() {
+        document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.getElementById('lightdarktoggle').innerText = document.documentElement.dataset.theme === 'dark' ? '☀️' : '🌙';
+      }
+
+      async function share() {
+        if (navigator.share) {
+          try {
+            await navigator.share({
+              "title": {{ strings.share_title | tojson }},
+              "text": {{ strings.share_text | tojson }},
+              "url": window.location.href
+            });
+          } catch (err) {
+            console.error('Error sharing: ' + err);
+          }
+        } else {
+          navigator.clipboard.writeText(window.location.href);
+          alert({{ strings.clipboard_alert | tojson }});
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        toggleTheme();
+        document.getElementById('lightdarktoggle').addEventListener('click', toggleTheme);
+        document.getElementById('share').addEventListener('click', share);
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('ai')) {
+          Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = urlParams.get('ai'));
+        } else {
+          setInterval(function() {
+            const models = {{ ai_models | tojson }};
+            Array.from(document.querySelectorAll('.ai')).forEach(el => el.innerText = models[Math.floor(Math.random() * models.length)]);
+          }, 3000);
+        }
+        fetch('https://api.github.com/repos/leoherzog/stopcitingai', {
+          "headers": {
+            "Accept": "application/vnd.github+json"
+          }
+        })
+        .then(function(res) {
+          if (!res.ok) throw new Error('GitHub API error: HTTP ' + res.status);
+          return res.json();
+        })
+        .then(function(data) {
+          document.getElementById('star').textContent = {{ strings.github_stars_format | tojson }}.replace('{count}', data.stargazers_count.toLocaleString());
+        });
+      });
+    </script>
+  </body>
+</html>

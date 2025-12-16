@@ -96,7 +96,7 @@
         <h1>あなたは何かを示そうとして情報源に<mark>AI</mark>を引用したのでここに送られました。</h1>
       </article>
       <article>
-        <h2>CharGPT、Claude、Geminiなどの大規模言語モデル（LLM）の応答は事実ではありません。</h2>
+        <h2>ChatGPT、Claude、Geminiなどの大規模言語モデル（LLM）の応答は事実ではありません。</h2>
         <p>それらは順序に従ってどんな単語が次に来るのがもっともらしいか予測しています。</p>
         <p>それらは説得力があるように見える情報を生成することはできますが、その情報は正確でなかったり、信頼できなかったりします。</p>
       </article>
@@ -181,6 +181,8 @@
           <option value="en">English</option>
           <option value="es">Español</option>
           <option value="es-AR">Español (Argentina)</option>
+          <option value="fr">Français (France)</option>
+          <option value="fr-CA">Français (Canada)</option>
           <option value="id">Indonesia</option>
           <option value="ja">日本語</option>
           <option value="nl">Nederlands</option>
@@ -232,9 +234,11 @@
       function findBestMatch(tag, available) {
         const normalized = (tag || '').toLowerCase();
         if (!normalized) return null;
-        if (available.includes(normalized)) return normalized;
+        const exact = available.find(opt => opt.toLowerCase() === normalized);
+        if (exact) return exact;
         const base = normalized.split('-')[0];
-        return available.includes(base) ? base : null;
+        const baseMatch = available.find(opt => opt.toLowerCase() === base);
+        return baseMatch || null;
       }
 
       function checkLanguageState() {

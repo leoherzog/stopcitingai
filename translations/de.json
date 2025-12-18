@@ -26,12 +26,12 @@
     "not_facts_heading": "Antworten von Large Language Modellen wie ChatGPT, Claude, oder Gemini sind keine Fakten.",
     "not_facts_p1": "Sie versuchen die Worte vorherzusagen, die in einem Text am wahrscheinlichsten als nächstes vorkommen.",
     "not_facts_p2": "Sie können überzeugend klingende Informationen erzeugen, aber diese Informationen sind nicht unbedingt korrekt oder zuverlässig.",
-    "imagine_heading": "Stell die vor, eine Person hat tausende Bücher gelesen, aber kann sich nicht erinnern, wo sie was gelesen hat.",
+    "imagine_heading": "Stell dir vor, eine Person hat tausende Bücher gelesen, aber kann sich nicht erinnern, wo sie was gelesen hat.",
     "good_at_label": "Worin könnte diese Person <mark>gut</mark> sein?",
     "bad_at_label": "Worin könnte diese Person <mark class=\"no\">schlecht</mark> sein?",
     "example_prompt_label": "Prompt-Beispiele",
     "good_prompts": [
-      "Hilft mir Ideen dazu zu brainstormen.",
+      "Hilf mir, Ideen dazu zu brainstormen.",
       "Was sind typische Lösungsansätze dafür?",
       "Fass das zusammen.",
       "Wie kann man das gut ausdrücken?"
@@ -50,7 +50,7 @@
     "share_cta": "Schicke das einer Person, die zu dir gesagt hat,",
     "share_cta_quote": "&ldquo;Aber {ai} hat gesagt...&rdquo;",
     "share_button": "Teilen",
-    "footer_like_llms": "Ich mag LLMs. I mag Machine Learning.",
+    "footer_like_llms": "Ich mag LLMs. Ich mag Machine Learning.",
     "footer_brains_off": "Ich möchte nur nicht sehen, wie kluge Menschen ihr Gehirn abschalten.",
     "footer_about_label": "Mehr über Leo Herzog",
     "github_star_button": "Star on GitHub",

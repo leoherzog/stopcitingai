@@ -1,0 +1,116 @@
+{
+  "lang": "sv",
+  "locale": "sv_SE",
+  "language_name": "Svenska",
+  "font": "caveat",
+  "ai_models": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Copilot",
+    "Llama",
+    "Apple Intelligence",
+    "Google AI Mode",
+    "Bing AI",
+    "Perplexity"
+  ],
+  "strings": {
+    "meta_title": "Sluta använda AI som källa",
+    "meta_description": "Ett svar på ”Men ChatGPT sa ju…”",
+    "og_image_alt": "En robot och en pratbubbla med en förbudssymbol över och texten ”Men ChatGPT sa ju”",
+    "twitter_description": "Ett svar på ”Men ChatGPT sa ju…”",
+    "twitter_image_alt": "En robot och en pratbubbla med en förbudssymbol över och texten ”Men ChatGPT sa ju…”",
+    "toggle_theme_label": "Växla mellan ljust och mörkt läge",
+    "but_ai_said": "&ldquo;Men {ai} sa ju…&rdquo;",
+    "sent_here_because": "Du har skickats hit för att du använde <mark>AI</mark> som källa för att försöka bevisa något.",
+    "not_facts_heading": "Svar från stora språkmodeller som ChatGPT, Claude eller Gemini är inte fakta.",
+    "not_facts_p1": "De försöker förutsäga vilka ord som sannolikt kommer härnäst i en textsekvens.",
+    "not_facts_p2": "De kan skapa information som låter övertygande, men det betyder inte att informationen är korrekt eller tillförlitlig.",
+    "imagine_heading": "Tänk dig någon som har läst tusentals böcker, men inte minns var de läste vad.",
+    "good_at_label": "Vad skulle en sådan person kunna vara <mark>bra</mark> på?",
+    "bad_at_label": "Vad skulle en sådan person kunna vara <mark class=\"no\">dålig</mark> på?",
+    "example_prompt_label": "Exempel på prompt",
+    "good_prompts": [
+      "Hjälp mig komma på idéer kring det här.",
+      "Vilka mönster ser du i det här?",
+      "Sammanfatta det här åt mig.",
+      "Hur kan jag formulera det här bättre?"
+    ],
+    "bad_prompts": [
+      "Vilken dag hände det här?",
+      "Vad borde jag göra härnäst?",
+      "Stämmer det här påståendet?",
+      "Vilket prejudikat gäller här?"
+    ],
+    "might_get_answer": "Visst, du <em>kan</em> få ett svar som råkar vara rätt, eller ett råd som faktiskt är bra… men vilka ”böcker” är det den ”minns” när den ger dig svaret? Svaret eller rådet är en vanlig kombination av ord, inte ett faktum.",
+    "dont_copy_paste_heading": "Kopiera inte något en chattbot har sagt och skicka det till någon som om det vore en auktoritativ källa.",
+    "dont_copy_paste_p1": "När du gör det säger du i princip: ”här är ett gäng ord som ofta brukar förekomma tillsammans i en mening.”",
+    "dont_copy_paste_p2": "Ibland kan det vara hjälpsamt eller ge en bra insikt. Men det är inte en <strong>sanning</strong>, och det är definitivt inte sista ordet i frågan.",
+    "further_reading_heading": "Läs mer:",
+    "share_cta": "Skicka den här sidan till någon som just har sagt:",
+    "share_cta_quote": "&ldquo;Men {ai} sa ju...&rdquo;",
+    "share_button": "Dela",
+    "footer_like_llms": "Jag gillar LLM:er. Jag gillar maskininlärning.",
+    "footer_brains_off": "Jag gillar bara inte att se smarta människor stänga av hjärnan.",
+    "footer_about_label": "Mer om Leo Herzog",
+    "github_star_button": "Ge en stjärna på GitHub",
+    "github_star_label": "Ge en stjärna på GitHub",
+    "github_stars_format": "★ {count} stjärnor på GitHub",
+    "select_language_label": "Välj språk",
+    "clipboard_alert": "Länken har kopierats till urklipp.",
+    "share_title": "Sluta använda AI som källa",
+    "share_text": "Ett svar på \"Men ChatGPT sa ju...\""
+  },
+  "further_reading": [
+    {
+      "text": "OpenAI: Varför språkmodeller hallucinerar",
+      "url": "https://openai.com/index/why-language-models-hallucinate/"
+    },
+    {
+      "text": "Oxford University: Stora språkmodeller kan skada vetenskapen med falska svar, enligt Oxfordstudie",
+      "url": "https://www.ox.ac.uk/news/2023-11-20-large-language-models-pose-risk-science-false-answers-says-oxford-study"
+    },
+    {
+      "text": "New York Times: AI blir kraftfullare, men hallucinationerna blir värre",
+      "url": "https://www.nytimes.com/2025/05/05/technology/ai-hallucinations-chatgpt-google.html",
+      "archived_url": "https://archive.is/CD7Ge"
+    },
+    {
+      "text": "MIT Media Lab: Människor litar för mycket på AI-genererade medicinska råd, trots låg träffsäkerhet",
+      "url": "https://www.media.mit.edu/publications/NEJM-AI-people-overtrust-ai-generated-medical-advice-despite-low-accuracy/"
+    },
+    {
+      "text": "Business Insider: Varför AI-chattbotar hallucinerar, enligt forskare på OpenAI",
+      "url": "https://www.businessinsider.com/why-ai-chatbots-hallucinate-openai-chatgpt-anthropic-claude-2025-9"
+    },
+    {
+      "text": "Reuters: AI-hallucinationer i domstolshandlingar skapar problem för jurister",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/ai-hallucinations-court-papers-spell-trouble-lawyers-2025-02-18/"
+    },
+    {
+      "text": "MIT Technology Review: Så för AI in fel i rättssalar",
+      "url": "https://www.technologyreview.com/2025/05/20/1116823/how-ai-is-introducing-errors-into-courtrooms/"
+    },
+    {
+      "text": "Nature: AI-chattbotar håller med för mycket, och forskare menar att det skadar vetenskapen",
+      "url": "https://www.nature.com/articles/d41586-025-03390-0"
+    },
+    {
+      "text": "CNN: Föräldrar till 16-åring stämmer OpenAI och hävdar att ChatGPT gav honom råd om självmord",
+      "url": "https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit"
+    },
+    {
+      "text": "Financial Times: Hallucinationerna som hemsöker AI, därför har chattbotar svårt att hålla sig till sanningen",
+      "url": "https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb",
+      "archived_url": "https://archive.is/P1Wpc"
+    },
+    {
+      "text": "The Guardian: Inställsamma AI-chattbotar säger det användare vill höra, visar studie",
+      "url": "https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows"
+    },
+    {
+      "text": "PCMag: Vibe coding-fiasko, AI-agent löper amok och raderar ett företags hela databas",
+      "url": "https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database"
+    }
+  ]
+}

@@ -17,7 +17,7 @@
   "strings": {
     "meta_title": "Smettila di citare l’IA",
     "meta_description": "Una risposta a «Ma ChatGPT ha detto…»",
-    "og_image_alt": "Un robot con un fumetto e un segnale di divieto con il testo «Ma ChatCPT ha detto»",
+    "og_image_alt": "Un robot con un fumetto e un segnale di divieto con il testo «Ma ChatGPT ha detto»",
     "twitter_description": "Una risposta a «Ma ChatGPT ha detto…»",
     "twitter_image_alt": "Un robot con un fumetto e un segnale di divieto con il testo «Ma ChatGPT ha detto»",
     "toggle_theme_label": "Tema chiaro/scuro",
@@ -52,7 +52,7 @@
     "share_button": "Condividi",
     "footer_like_llms": "Mi piacciono gli LLM. Mi piace il Machine Learning.",
     "footer_brains_off": "Semplicemente non mi piace vedere persone intelligenti spegnere il cervello.",
-    "footer_about_label": "More about Leo Herzog",
+    "footer_about_label": "Maggiori informazioni su Leo Herzog",
     "github_star_button": "Stelle su GitHub",
     "github_star_label": "Stelle su GitHub",
     "github_stars_format": "★ {count} Stelle su GitHub",

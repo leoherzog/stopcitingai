@@ -81,6 +81,17 @@
         display: inline-block;
         transform: rotate(-45deg);
       }
+      .contributors {
+        margin-top: 2rem;
+      }
+      .contributors a {
+        text-decoration: none;
+      }
+      .contributors img {
+        border-radius: 50%;
+        margin: .125rem;
+        vertical-align: middle;
+      }
       @media (min-width: 768px) {
         #language {
           width: fit-content;
@@ -173,6 +184,13 @@
         <a href="https://github.com/leoherzog/stopcitingai" target="_blank" aria-label="{{ strings.github_star_label }}">
           <button id="star" class="contrast">★ {{ strings.github_star_button }}</button>
         </a>
+        {% if contributors %}
+        <p class="contributors">
+          {% for contributor in contributors %}
+          <a href="{{ contributor.url }}" target="_blank" aria-label="{{ contributor.login }}" data-tooltip="{{ contributor.login }}"><img src="{{ contributor.avatar }}" alt="{{ contributor.login }}" width="32" height="32" loading="lazy" /></a>
+          {% endfor %}
+        </p>
+        {% endif %}
       </section>
       <section>
         <select id="language" aria-label="{{ strings.select_language_label }}">

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <base target="_top" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 - Página no encontrada | Dejá de citar a la IA</title>
+    <meta
+      name="description"
+      content="Esta página no existe (y no le pedimos a una IA que la alucinara)"
+    />
+    <meta name="author" content="Leo Herzog | herzog.tech" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+    />
+    <style>
+      #lightdarktoggle {
+        position: fixed;
+        top: 0.5rem;
+        left: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .centered {
+        text-align: center;
+      }
+      .intro {
+        font-family: "Caveat Brush", "Segoe Print", "Bradley Hand", Chilanka,
+          TSCu_Comic, casual, cursive;
+        font-size: 2.5rem;
+        width: fit-content;
+        margin: 0 auto;
+        padding-top: 15vh;
+        padding-right: 5%;
+        height: 20vh;
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+      }
+      article {
+        margin: 20vh auto;
+      }
+      section {
+        margin: 10vh auto;
+      }
+      h1:only-child,
+      h2:only-child {
+        margin: 0;
+      }
+      .no {
+        color: white;
+        background-color: firebrick;
+        border-color: firebrick;
+      }
+      @media (min-width: 768px) {
+        #language {
+          width: fit-content;
+          float: right;
+        }
+      }
+      @media (min-width: 1280px) {
+        article {
+          max-width: 50vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <figure
+      id="lightdarktoggle"
+      aria-label="Toggle between light and dark mode"
+    >
+      ☀️
+    </figure>
+    <main class="container">
+      <h1 class="centered intro">404: No encontrada</h1>
+      <article>
+        <h1>Esta página no existe.</h1>
+      </article>
+      <article>
+        <h2>
+          A diferencia de un chatbot de IA, no vamos a inventar algo solo para
+          darte una respuesta.
+        </h2>
+        <p>
+          Podríamos haberle pedido a ChatGPT que alucinara una página para vos,
+          pero eso no sería muy útil.
+        </p>
+        <p>
+          En cambio, estamos siendo honestos:
+          <mark>la página que buscás no está acá</mark>.
+        </p>
+      </article>
+      <article>
+        <h2>Lo que podés hacer:</h2>
+        <ul>
+          <li>Revisá la URL en busca de errores de escritura</li>
+          <li>Volvé a la <a href="/es-AR/">página de inicio</a></li>
+          <li>
+            Acordate que solo porque algo <em>suena</em> como si debiera existir
+            no significa que exista
+          </li>
+        </ul>
+      </article>
+      <article class="centered">
+        <p>
+          (¿Ves lo que hicimos acá? Te dimos información precisa en lugar de una
+          mentira convincente.)
+        </p>
+        <a href="/es-AR/">
+          <button>← Volver a Dejá de citar a la IA</button>
+        </a>
+      </article>
+      <section class="centered">
+        <p>
+          Me gustan los LLMs. Me gusta el Machine Learning.
+          <br />
+          No me gusta ver que la gente inteligente apaga el cerebro.
+          <br />
+          <a
+            href="https://herzog.tech"
+            target="_blank"
+            style="text-decoration: none"
+            aria-label="Más acerca de Leo Herzog"
+          >
+            ❤
+          </a>
+        </p>
+      </section>
+      <section>
+        <select id="language" aria-label="Seleccioná el idioma">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="es-AR">Español (Argentina)</option>
+        </select>
+      </section>
+    </main>
+    <script>
+      function toggleTheme() {
+        document.documentElement.dataset.theme =
+          document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.getElementById("lightdarktoggle").innerText =
+          document.documentElement.dataset.theme === "dark" ? "☀️" : "🌙";
+      }
+
+      function redirectToLanguage(lang) {
+        window.location.assign(
+          window.location.protocol +
+            "//" +
+            window.location.host +
+            "/" +
+            lang +
+            "/"
+        );
+      }
+
+      function isDirectNavigation() {
+        if (!document.referrer) {
+          return true;
+        }
+        try {
+          const referrerUrl = new URL(document.referrer);
+          return referrerUrl.origin !== window.location.origin;
+        } catch (err) {
+          console.error("Unable to parse referrer URL: " + err);
+          return true;
+        }
+      }
+
+      function findBestMatch(tag, available) {
+        const normalized = (tag || "").toLowerCase();
+        if (!normalized) return null;
+        const direct = available.find(
+          (value) => value.toLowerCase() === normalized
+        );
+        if (direct) return direct;
+        const base = normalized.split("-")[0];
+        return available.find((value) => value.toLowerCase() === base) || null;
+      }
+
+      function checkLanguageState() {
+        const thisPageLang = document.documentElement.lang;
+        const normalizedThisLang = (thisPageLang || "").toLowerCase();
+        const languageSelect = document.getElementById("language");
+        const availableLangs = Array.from(languageSelect.options).map(
+          (option) => option.value
+        );
+        languageSelect.value =
+          findBestMatch(thisPageLang, availableLangs) || availableLangs[0];
+
+        const pickerNavigationLang = sessionStorage.getItem(
+          "languageRedirectFromPicker"
+        );
+        if (pickerNavigationLang) {
+          sessionStorage.removeItem("languageRedirectFromPicker");
+          if (
+            pickerNavigationLang !== normalizedThisLang &&
+            availableLangs.find(
+              (value) => value.toLowerCase() === pickerNavigationLang
+            )
+          ) {
+            const targetLang =
+              availableLangs.find(
+                (value) => value.toLowerCase() === pickerNavigationLang
+              ) || pickerNavigationLang;
+            redirectToLanguage(targetLang);
+          }
+          return;
+        }
+
+        const pathSegments = window.location.pathname
+          .split("/")
+          .filter(Boolean);
+        const hasExplicitLanguageSegment =
+          pathSegments.length > 0 &&
+          availableLangs.find(
+            (value) => value.toLowerCase() === pathSegments[0].toLowerCase()
+          );
+        const preferenceLang = localStorage.getItem("preferredLanguage");
+        const directNavigation = isDirectNavigation();
+        if (directNavigation && !hasExplicitLanguageSegment && preferenceLang) {
+          const matchedPref = findBestMatch(preferenceLang, availableLangs);
+          if (matchedPref && matchedPref.toLowerCase() !== normalizedThisLang) {
+            redirectToLanguage(matchedPref);
+            return;
+          }
+        }
+
+        if (directNavigation) {
+          const browserLangs =
+            navigator.languages && navigator.languages.length
+              ? navigator.languages
+              : [navigator.language || navigator.userLanguage];
+          for (const lang of browserLangs) {
+            const matched = findBestMatch(lang, availableLangs);
+            if (matched && matched.toLowerCase() !== normalizedThisLang) {
+              redirectToLanguage(matched);
+              return;
+            }
+          }
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        toggleTheme();
+        document
+          .getElementById("lightdarktoggle")
+          .addEventListener("click", toggleTheme);
+        checkLanguageState();
+        document
+          .getElementById("language")
+          .addEventListener("change", function () {
+            const selectedLang = this.value;
+            localStorage.setItem("preferredLanguage", selectedLang);
+            sessionStorage.setItem(
+              "languageRedirectFromPicker",
+              selectedLang.toLowerCase()
+            );
+            redirectToLanguage(selectedLang);
+          });
+      });
+    </script>
+  </body>
+</html>

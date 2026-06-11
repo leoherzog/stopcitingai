@@ -16,7 +16,10 @@ Run with: uv run build.py
 
 import base64
 import json
+import os
+import re
 import shutil
+import urllib.request
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
@@ -42,6 +45,63 @@ def load_font_base64(font_path: Path) -> str:
 
 
 SITE_URL = 'https://stopcitingai.com'
+GITHUB_REPO = 'leoherzog/stopcitingai'
+
+
+def fetch_github_json(url: str):
+    """Fetch JSON from the GitHub API, using GITHUB_TOKEN if available."""
+    request = urllib.request.Request(url, headers={
+        'Accept': 'application/vnd.github+json',
+        'User-Agent': GITHUB_REPO.replace('/', '-') + '-build',
+    })
+    token = os.environ.get('GITHUB_TOKEN')
+    if token:
+        request.add_header('Authorization', 'Bearer ' + token)
+    with urllib.request.urlopen(request, timeout=10) as response:
+        return json.load(response)
+
+
+def fetch_contributors():
+    """Fetch repo contributors (including commit co-authors) for the footer thanks widget.
+
+    Returns an empty list on any failure so an API outage or rate limit
+    never breaks the build.
+    """
+    try:
+        people = {}
+        for c in fetch_github_json(f'https://api.github.com/repos/{GITHUB_REPO}/contributors?per_page=100'):
+            if c.get('type') == 'User':
+                people[c['login']] = {
+                    'login': c['login'],
+                    'url': c['html_url'],
+                    'avatar': c['avatar_url'] + '&s=64',
+                }
+        # The contributors endpoint only counts commit authors whose email is
+        # linked to a GitHub account, so also credit merged PR authors...
+        for pr in fetch_github_json(f'https://api.github.com/repos/{GITHUB_REPO}/pulls?state=closed&per_page=100'):
+            if pr.get('merged_at') and pr['user'].get('type') == 'User':
+                people.setdefault(pr['user']['login'], {
+                    'login': pr['user']['login'],
+                    'url': pr['user']['html_url'],
+                    'avatar': pr['user']['avatar_url'] + '&s=64',
+                })
+        # ...and Co-authored-by credits from commit messages
+        for commit in fetch_github_json(f'https://api.github.com/repos/{GITHUB_REPO}/commits?per_page=100'):
+            for user_id, login in re.findall(
+                r'^Co-authored-by:[^<]*<(\d+)\+([A-Za-z0-9-]+)@users\.noreply\.github\.com>',
+                commit['commit']['message'],
+                re.MULTILINE,
+            ):
+                people.setdefault(login, {
+                    'login': login,
+                    'url': f'https://github.com/{login}',
+                    'avatar': f'https://avatars.githubusercontent.com/u/{user_id}?v=4&s=64',
+                })
+        people.pop(GITHUB_REPO.split('/')[0], None)
+        return list(people.values())
+    except Exception as e:
+        print(f'Warning: could not fetch contributors ({e}), skipping thanks widget')
+        return []
 
 # HTML template for the AI model name (used in rotating display)
 # Note: quotes escaped for JSON string replacement
@@ -74,6 +134,10 @@ def build():
     pico_css = (root / 'pico.min.css').read_text(encoding='utf-8')
     lang_js = (root / 'lang.js').read_text(encoding='utf-8')
 
+    # Fetch contributors for the footer thanks widget
+    contributors = fetch_contributors()
+    print(f'Found {len(contributors)} contributors')
+
     # Load all translations and build languages list
     translations_dir = root / 'translations'
     translations = []
@@ -104,6 +168,7 @@ def build():
             pico_css=pico_css,
             lang_js=lang_js,
             languages=languages,
+            contributors=contributors,
         )
 
         # Output path: English at root, others in subdirectories

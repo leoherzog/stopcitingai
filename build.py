@@ -97,10 +97,38 @@ def fetch_contributors():
                     'url': f'https://github.com/{login}',
                     'avatar': f'https://avatars.githubusercontent.com/u/{user_id}?v=4&s=64',
                 })
-        people.pop(GITHUB_REPO.split('/')[0], None)
         return list(people.values())
     except Exception as e:
         print(f'Warning: could not fetch contributors ({e}), skipping thanks widget')
+        return []
+
+
+def fetch_stargazers():
+    """Fetch everyone who has starred the repo, for the footer thanks widget.
+
+    Pages through the stargazers endpoint (100 per page). Returns an empty
+    list on any failure so an API outage or rate limit never breaks the build.
+    """
+    try:
+        people = {}
+        page = 1
+        while True:
+            batch = fetch_github_json(
+                f'https://api.github.com/repos/{GITHUB_REPO}/stargazers?per_page=100&page={page}'
+            )
+            for s in batch:
+                if s.get('type') == 'User':
+                    people[s['login']] = {
+                        'login': s['login'],
+                        'url': s['html_url'],
+                        'avatar': s['avatar_url'] + '&s=64',
+                    }
+            if len(batch) < 100:
+                break
+            page += 1
+        return list(people.values())
+    except Exception as e:
+        print(f'Warning: could not fetch stargazers ({e}), skipping from thanks widget')
         return []
 
 # HTML template for the AI model name (used in rotating display)
@@ -134,9 +162,13 @@ def build():
     pico_css = (root / 'pico.min.css').read_text(encoding='utf-8')
     lang_js = (root / 'lang.js').read_text(encoding='utf-8')
 
-    # Fetch contributors for the footer thanks widget
+    # Fetch contributors and stargazers for the footer thanks widget.
+    # Contributors come first, then stargazers who aren't already credited.
     contributors = fetch_contributors()
-    print(f'Found {len(contributors)} contributors')
+    stargazers = fetch_stargazers()
+    seen = {p['login'] for p in contributors}
+    thanks = contributors + [s for s in stargazers if s['login'] not in seen]
+    print(f'Found {len(contributors)} contributors and {len(stargazers)} stargazers ({len(thanks)} total)')
 
     # Load all translations and build languages list
     translations_dir = root / 'translations'
@@ -168,7 +200,7 @@ def build():
             pico_css=pico_css,
             lang_js=lang_js,
             languages=languages,
-            contributors=contributors,
+            contributors=thanks,
         )
 
         # Output path: English at root, others in subdirectories

@@ -7,11 +7,17 @@
     "ChatGPT",
     "Claude",
     "Gemini",
+    "Grok",
+    "DeepSeek",
+    "Mistral",
+    "Qwen",
     "Copilot",
+    "Meta AI",
     "Llama",
+    "Gemma",
     "Apple Intelligence",
     "Google AI Mode",
-    "Bing AI",
+    "Google AI Overviews",
     "Perplexity"
   ],
   "strings": {

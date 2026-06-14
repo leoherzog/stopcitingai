@@ -1,0 +1,120 @@
+{
+  "lang": "pt-BR",
+  "locale": "pt_BR",
+  "language_name": "Português (Brasil)",
+  "font": "caveat",
+  "ai_models": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Copilot",
+    "Llama",
+    "Apple Intelligence",
+    "Google AI Mode",
+    "Bing AI",
+    "Perplexity"
+  ],
+  "strings": {
+    "meta_title": "Pare de Citar a IA",
+    "meta_description": "Uma resposta a “Mas o ChatGPT disse…”",
+    "og_image_alt": "Um robô e um balão de fala com um círculo de “proibido” por cima e o texto “Mas o ChatGPT disse”",
+    "twitter_description": "Uma resposta a “Mas o ChatGPT disse…”",
+    "twitter_image_alt": "Um robô e um balão de fala com um círculo de “proibido” por cima e o texto “Mas o ChatGPT disse…”",
+    "toggle_theme_label": "Alternar entre modo claro e escuro",
+    "but_ai_said": "&ldquo;Mas o {ai} disse…&rdquo;",
+    "sent_here_because": "Mandaram você para cá porque citou a <mark>IA</mark> como fonte para tentar provar alguma coisa.",
+    "not_facts_heading": "Respostas de Grandes Modelos de Linguagem como ChatGPT, Claude ou Gemini não são fatos.",
+    "not_facts_p1": "Eles preveem quais palavras têm mais probabilidade de vir a seguir em uma sequência.",
+    "not_facts_p2": "Eles podem produzir informações que soam convincentes, mas essas informações podem não ser precisas nem confiáveis.",
+    "imagine_heading": "Imagine alguém que leu milhares de livros, mas não lembra onde leu cada coisa.",
+    "good_at_label": "Em que tipo de coisas essa pessoa poderia ser <mark>boa</mark>?",
+    "bad_at_label": "Em que tipo de coisas essa pessoa poderia ser <mark class=\"no\">ruim</mark>?",
+    "example_prompt_label": "Exemplo de prompt",
+    "good_prompts": [
+      "Me ajude a ter ideias sobre isso?",
+      "Quais são alguns padrões comuns entre estes?",
+      "Resuma isso para mim",
+      "Qual é uma boa forma de expressar isso?"
+    ],
+    "bad_prompts": [
+      "Me diga em que dia isso aconteceu",
+      "O que eu deveria fazer a seguir sobre isso?",
+      "Esta afirmação é verdadeira?",
+      "Qual é o precedente jurídico para isso?"
+    ],
+    "might_get_answer": "Claro, você <em>pode</em> obter uma resposta que esteja certa ou um conselho que seja bom… mas quais “livros” ele está “lembrando” quando dá essa resposta? Essa resposta ou conselho é uma combinação comum de palavras, não um fato.",
+    "dont_copy_paste_heading": "Não copie e cole algo que um chatbot disse e mande para alguém como se aquilo tivesse autoridade.",
+    "dont_copy_paste_p1": "Quando você faz isso, está basicamente dizendo: “aqui está um monte de palavras que costumam aparecer juntas em uma frase.”",
+    "dont_copy_paste_p2": "Às vezes isso pode ser útil ou esclarecedor. Mas não é uma <strong>verdade</strong>, e com certeza não é a palavra final sobre um assunto.",
+    "further_reading_heading": "Leitura adicional:",
+    "share_cta": "Mande isso para alguém que acabou de te dizer:",
+    "share_cta_quote": "&ldquo;Mas o {ai} disse...&rdquo;",
+    "share_button": "Compartilhar",
+    "footer_like_llms": "Eu gosto de LLMs. Eu gosto de Machine Learning.",
+    "footer_brains_off": "Só não gosto de ver pessoas inteligentes desligarem o cérebro.",
+    "footer_about_label": "Mais sobre Leo Herzog",
+    "github_star_button": "Adicionar aos favoritos no GitHub",
+    "github_star_label": "Adicionar aos favoritos no GitHub",
+    "github_stars_format": "★ {count} favoritos no GitHub",
+    "select_language_label": "Selecionar idioma",
+    "clipboard_alert": "Link copiado para a área de transferência!",
+    "share_title": "Pare de Citar a IA",
+    "share_text": "Uma resposta a \"Mas o ChatGPT disse...\""
+  },
+  "further_reading": [
+    {
+      "text": "OpenAI: Why language models hallucinate",
+      "url": "https://openai.com/index/why-language-models-hallucinate/"
+    },
+    {
+      "text": "Oxford University: Large Language Models pose risk to science with false answers, says Oxford study",
+      "url": "https://www.ox.ac.uk/news/2023-11-20-large-language-models-pose-risk-science-false-answers-says-oxford-study"
+    },
+    {
+      "text": "New York Times: A.I. Is Getting More Powerful, but Its Hallucinations Are Getting Worse",
+      "url": "https://www.nytimes.com/2025/05/05/technology/ai-hallucinations-chatgpt-google.html",
+      "archived_url": "https://archive.is/CD7Ge"
+    },
+    {
+      "text": "MIT Media Lab: People Overtrust AI-Generated Medical Advice despite Low Accuracy",
+      "url": "https://www.media.mit.edu/publications/NEJM-AI-people-overtrust-ai-generated-medical-advice-despite-low-accuracy/"
+    },
+    {
+      "text": "Business Insider: Why AI chatbots hallucinate, according to OpenAI researchers",
+      "url": "https://www.businessinsider.com/why-ai-chatbots-hallucinate-openai-chatgpt-anthropic-claude-2025-9"
+    },
+    {
+      "text": "Reuters: AI 'hallucinations' in court papers spell trouble for lawyers",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/ai-hallucinations-court-papers-spell-trouble-lawyers-2025-02-18/"
+    },
+    {
+      "text": "MIT Technology Review: How AI is introducing errors into courtrooms",
+      "url": "https://www.technologyreview.com/2025/05/20/1116823/how-ai-is-introducing-errors-into-courtrooms/"
+    },
+    {
+      "text": "Nature: AI chatbots are sycophants — researchers say it's harming science",
+      "url": "https://www.nature.com/articles/d41586-025-03390-0"
+    },
+    {
+      "text": "CNN: Parents of 16-year-old sue OpenAI, claiming ChatGPT advised on his suicide",
+      "url": "https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit"
+    },
+    {
+      "text": "Financial Times: The ‘hallucinations’ that haunt AI: why chatbots struggle to tell the truth",
+      "url": "https://www.ft.com/content/7a4e7eae-f004-486a-987f-4a2e4dbd34fb",
+      "archived_url": "https://archive.is/P1Wpc"
+    },
+    {
+      "text": "The Guardian: ‘Sycophantic’ AI chatbots tell users what they want to hear, study shows",
+      "url": "https://www.theguardian.com/technology/2025/oct/24/sycophantic-ai-chatbots-tell-users-what-they-want-to-hear-study-shows"
+    },
+    {
+      "text": "PCMag: Vibe Coding Fiasco: AI Agent Goes Rogue, Deletes Company’s Entire Database",
+      "url": "https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database"
+    },
+    {
+      "text": "Stephen Wolfram: What Is ChatGPT Doing and Why Does It Work?",
+      "url": "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
+    }
+  ]
+}

@@ -48,6 +48,11 @@ SITE_URL = 'https://stopcitingai.com'
 GITHUB_REPO = 'leoherzog/stopcitingai'
 
 
+def page_url(lang: str) -> str:
+    """Canonical URL for a language's page: English at root, others in subdirectories."""
+    return f'{SITE_URL}/' if lang == 'en' else f'{SITE_URL}/{lang}/'
+
+
 def fetch_github_json(url: str):
     """Fetch JSON from the GitHub API, using GITHUB_TOKEN if available."""
     request = urllib.request.Request(url, headers={
@@ -181,6 +186,7 @@ def build():
         languages.append({
             'code': data['lang'],
             'name': data['language_name'],
+            'url': page_url(data['lang']),
         })
 
     # Build each language
@@ -194,6 +200,8 @@ def build():
 
         html = template.render(
             **data,
+            site_url=SITE_URL,
+            page_url=page_url(lang),
             font_data=fonts[font_key],
             font_family=font_config['family'],
             font_weight=font_config['weight'],

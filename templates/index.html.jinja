@@ -11,7 +11,7 @@
     <meta property="og:title" content="{{ strings.meta_title }}" />
     <meta property="og:description" content="{{ strings.meta_description }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://stopcitingai.com" />
+    <meta property="og:url" content="{{ page_url }}" />
     <meta property="og:image" content="https://stopcitingai.com/social.png" />
     <meta property="og:image:alt" content="{{ strings.og_image_alt }}" />
     <meta property="og:image:type" content="image/png" />
@@ -23,7 +23,34 @@
     <meta name="twitter:description" content="{{ strings.twitter_description }}" />
     <meta name="twitter:image" content="https://stopcitingai.com/social.png" />
     <meta name="twitter:image:alt" content="{{ strings.twitter_image_alt }}" />
+    <link rel="canonical" href="{{ page_url }}" />
+{%- for l in languages %}
+    <link rel="alternate" hreflang="{{ l.code }}" href="{{ l.url }}" />
+{%- endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ site_url }}/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "url": {{ page_url | tojson }},
+        "name": {{ strings.meta_title | tojson }},
+        "description": {{ strings.meta_description | tojson }},
+        "inLanguage": {{ lang | tojson }},
+        "image": "{{ site_url }}/social.png",
+        "isPartOf": {
+          "@type": "WebSite",
+          "url": "{{ site_url }}/",
+          "name": "Stop Citing AI",
+          "inLanguage": {{ languages | map(attribute='code') | list | tojson }}
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Leo Herzog",
+          "url": "https://herzog.tech"
+        }
+      }
+    </script>
     <style>
 {{ pico_css }}
     </style>
